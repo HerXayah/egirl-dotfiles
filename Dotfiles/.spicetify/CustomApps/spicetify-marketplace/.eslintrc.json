@@ -1,0 +1,96 @@
+{
+    "env": {
+        "browser": true,
+        "es2021": true
+    },
+    "extends": [
+        "eslint:recommended",
+        "plugin:react/recommended"
+    ],
+    "parserOptions": {
+        "ecmaFeatures": {
+            "jsx": true
+        },
+        "ecmaVersion": 12
+    },
+    "plugins": [
+        "react"
+    ],
+    "rules": {
+        "indent": [
+            "error",
+            4
+        ],
+        "linebreak-style": [
+            "error",
+            "unix"
+        ],
+        "quotes": [
+            "error",
+            "double",
+            { "allowTemplateLiterals": true }
+        ],
+        "semi": [
+            "error",
+            "always"
+        ],
+        "comma-dangle": [
+            "error",
+            "always-multiline"
+        ],
+        "no-var": "error",
+        "space-before-blocks": "error",
+        "comma-spacing": [
+            "error", { "before": false, "after": true }
+        ],
+        "no-trailing-spaces": "error",
+        "keyword-spacing": "error",
+        "no-multiple-empty-lines": [
+            "error", { "max": 1 }
+        ],
+        "object-curly-spacing": [
+            "error", "always"
+        ],
+        "key-spacing": [
+            "error", { "beforeColon": false, "afterColon": true }
+        ]
+    },
+    "settings": {
+        "react": {
+            "version": "detect"
+        }
+    },
+    "globals": {
+        "react": "readonly",
+        "reactDOM": "readonly",
+        "Spicetify": "readonly",
+        "Card": "readonly",
+        "OptionsMenu": "readonly",
+        "SortBox": "readonly",
+        "ReadmePage": "readonly",
+        "useEffect": "readonly",
+        "useState": "readonly",
+        "TopBarContent": "readonly",
+        "LoadingIcon": "readonly",
+        "LoadMoreIcon": "readonly",
+        "CONFIG": "writable",
+        "openConfig": "writable",
+        "openReloadModal": "writable",
+        "sortConfig": "writable",
+        "gridUpdateTabs": "writable",
+        "gridUpdatePostsVisual": "writable",
+        "getLocalStorageDataFromKey": "writable",
+        "initializeSnippets": "writable",
+        "LOCALSTORAGE_KEYS": "writable",
+        "ALL_TABS": "readonly",
+        "hexToRGB": "readonly",
+        "parseIni": "readonly",
+        "generateSchemesOptions": "readonly",
+        "getBlacklist": "readonly",
+        "fetchCssSnippets": "readonly",
+        "processAuthors": "readonly",
+        "DOWNLOAD_ICON": "readonly",
+        "SETTINGS_ICON": "readonly",
+        "TRASH_ICON": "readonly"
+    }
+}

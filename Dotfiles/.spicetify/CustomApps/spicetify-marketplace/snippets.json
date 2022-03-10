@@ -1,0 +1,37 @@
+[
+  {
+    "title": "Fix 'Episodes' Icon",
+    "description": "Fix the color of the Episodes icon",
+    "code": ".main-yourEpisodesButton-yourEpisodesIcon { background: var(--spice-text); } .main-yourEpisodesButton-yourEpisodesIcon path { fill: var(--spice-player); opacity: 0.7; }"
+  },
+  {
+    "title": "Fix 'Liked' Icon",
+    "description": "Fix the colours of the Liked icon in sidebar",
+    "code": ".main-likedSongsButton-likedSongsIcon { color: var(--spice-sidebar); background: var(--spice-text); }"
+  },
+  {
+    "title": "Fix 'Made For You' Icon",
+    "description": "Fix the colours of the Made For You icon",
+    "code": ".utp540VMXpC3bYIxo9wy { color: var(--spice-sidebar); background: var(--spice-text); opacity: 1; } .t6d9Hf7maqFPHp1Y02VR { color: var(--spice-text); }"
+  },
+  {
+    "title": "Hide Upgrade Button",
+    "description": "Makes the upgrade button hidden",
+    "code": ".main-topBar-UpgradeButton { display: none; }"
+  },
+  {
+    "title": "Auto-hide Friends",
+    "description": "Collapse the friends activity sidebar on small screens",
+    "code": ".main-buddyFeed-buddyFeedRoot { transition: width 0.3s; } @media screen and (max-width: 1200px) { .main-buddyFeed-buddyFeedRoot { width: 0; } }"
+  },
+  {
+    "title": "Smooth Reveal Playlist Gradient",
+    "description": "Reveals the playlist gradient header gradient with a fade in effect",
+    "code": ".main-entityHeader-overlay, .main-actionBarBackground-background, .main-entityHeader-overlay, .main-entityHeader-backgroundColor { -webkit-transition: 3s; }"
+  },
+  {
+    "title": "Fix progress bar displacement",
+    "description": "Fix the progress bar displacement when listening on different devices",
+    "code": ".main-connectBar-connectBar { overflow: visible !important; --triangle-position: 147px !important; align-items: unset !important; height: 0px !important; position: absolute !important; left: 80% !important; display: flex !important; bottom: 2% !important; padding: unset !important; }"
+  }
+]

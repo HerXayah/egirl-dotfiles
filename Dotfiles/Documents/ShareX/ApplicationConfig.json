@@ -1,0 +1,1419 @@
+{
+  "DefaultTaskSettings": {
+    "Description": "",
+    "Job": "None",
+    "UseDefaultAfterCaptureJob": true,
+    "AfterCaptureJob": "CopyImageToClipboard, UploadImageToHost",
+    "UseDefaultAfterUploadJob": true,
+    "AfterUploadJob": "CopyURLToClipboard",
+    "UseDefaultDestinations": true,
+    "ImageDestination": "CustomImageUploader",
+    "ImageFileDestination": "FTP",
+    "TextDestination": "CustomTextUploader",
+    "TextFileDestination": "FTP",
+    "FileDestination": "CustomFileUploader",
+    "URLShortenerDestination": "CustomURLShortener",
+    "URLSharingServiceDestination": "Twitter",
+    "OverrideFTP": false,
+    "FTPIndex": 0,
+    "OverrideCustomUploader": false,
+    "CustomUploaderIndex": 0,
+    "OverrideScreenshotsFolder": false,
+    "ScreenshotsFolder": "",
+    "UseDefaultGeneralSettings": true,
+    "GeneralSettings": {
+      "PlaySoundAfterCapture": false,
+      "PlaySoundAfterUpload": false,
+      "ShowToastNotificationAfterTaskCompleted": false,
+      "ToastWindowDuration": 3.0,
+      "ToastWindowFadeDuration": 1.0,
+      "ToastWindowPlacement": "BottomRight",
+      "ToastWindowSize": "400, 300",
+      "ToastWindowLeftClickAction": "OpenUrl",
+      "ToastWindowRightClickAction": "CloseNotification",
+      "ToastWindowMiddleClickAction": "AnnotateImage",
+      "UseCustomCaptureSound": false,
+      "CustomCaptureSoundPath": "",
+      "UseCustomTaskCompletedSound": false,
+      "CustomTaskCompletedSoundPath": "",
+      "UseCustomErrorSound": false,
+      "CustomErrorSoundPath": "",
+      "DisableNotifications": true,
+      "DisableNotificationsOnFullscreen": true,
+      "PopUpNotification": "ToastNotification"
+    },
+    "UseDefaultImageSettings": true,
+    "ImageSettings": {
+      "ImageFormat": "PNG",
+      "ImagePNGBitDepth": "Automatic",
+      "ImageJPEGQuality": 100,
+      "ImageGIFQuality": "Bit8",
+      "ImageAutoUseJPEG": false,
+      "ImageAutoUseJPEGSize": 2048,
+      "ImageAutoJPEGQuality": false,
+      "FileExistAction": "Ask",
+      "ImageEffectPresets": [
+        {
+          "Name": "Lisa",
+          "Effects": [
+            {
+              "$type": "ShareX.ImageEffectsLib.DrawBorder, ShareX.ImageEffectsLib",
+              "Type": "Inside",
+              "Size": 4,
+              "DashStyle": "Solid",
+              "Color": "232, 232, 232",
+              "UseGradient": true,
+              "Gradient": {
+                "Type": "ForwardDiagonal",
+                "Colors": [
+                  {
+                    "Color": "195, 55, 100",
+                    "Location": 0.0
+                  },
+                  {
+                    "Color": "29, 38, 113",
+                    "Location": 100.0
+                  }
+                ]
+              },
+              "Enabled": true
+            },
+            {
+              "$type": "ShareX.ImageEffectsLib.RoundedCorners, ShareX.ImageEffectsLib",
+              "CornerRadius": 8,
+              "Enabled": true
+            },
+            {
+              "$type": "ShareX.ImageEffectsLib.Canvas, ShareX.ImageEffectsLib",
+              "Margin": "0, 29, 0, 0",
+              "MarginMode": "AbsoluteSize",
+              "Color": "Transparent",
+              "Enabled": true
+            },
+            {
+              "$type": "ShareX.ImageEffectsLib.DrawBackground, ShareX.ImageEffectsLib",
+              "Color": "232, 232, 232",
+              "UseGradient": true,
+              "Gradient": {
+                "Type": "Vertical",
+                "Colors": [
+                  {
+                    "Color": "195, 55, 100",
+                    "Location": 0.0
+                  },
+                  {
+                    "Color": "29, 38, 113",
+                    "Location": 100.0
+                  }
+                ]
+              },
+              "Enabled": false
+            },
+            {
+              "$type": "ShareX.ImageEffectsLib.DrawTextEx, ShareX.ImageEffectsLib",
+              "Text": "",
+              "Placement": "TopLeft",
+              "Offset": "12, 10",
+              "Angle": 0,
+              "AutoHide": true,
+              "Font": "Segoe MDL2 Assets, 9pt",
+              "Color": "255, 95, 86",
+              "UseGradient": false,
+              "Gradient": {
+                "Type": "Horizontal",
+                "Colors": [
+                  {
+                    "Color": "255, 3, 135",
+                    "Location": 0.0
+                  },
+                  {
+                    "Color": "255, 143, 3",
+                    "Location": 100.0
+                  }
+                ]
+              },
+              "Outline": true,
+              "OutlineSize": 2,
+              "OutlineColor": "224, 68, 62",
+              "OutlineUseGradient": false,
+              "OutlineGradient": {
+                "Type": "Horizontal",
+                "Colors": [
+                  {
+                    "Color": "184, 11, 195",
+                    "Location": 0.0
+                  },
+                  {
+                    "Color": "98, 54, 255",
+                    "Location": 100.0
+                  }
+                ]
+              },
+              "Shadow": false,
+              "ShadowOffset": "0, 5",
+              "ShadowColor": "125, 0, 0, 0",
+              "ShadowUseGradient": false,
+              "ShadowGradient": {
+                "Type": "Horizontal",
+                "Colors": [
+                  {
+                    "Color": "0, 187, 138",
+                    "Location": 0.0
+                  },
+                  {
+                    "Color": "0, 105, 163",
+                    "Location": 100.0
+                  }
+                ]
+              },
+              "Enabled": false
+            },
+            {
+              "$type": "ShareX.ImageEffectsLib.DrawTextEx, ShareX.ImageEffectsLib",
+              "Text": "",
+              "Placement": "TopLeft",
+              "Offset": "32, 10",
+              "Angle": 0,
+              "AutoHide": true,
+              "Font": "Segoe MDL2 Assets, 9pt",
+              "Color": "255, 189, 46",
+              "UseGradient": false,
+              "Gradient": {
+                "Type": "Horizontal",
+                "Colors": [
+                  {
+                    "Color": "255, 3, 135",
+                    "Location": 0.0
+                  },
+                  {
+                    "Color": "255, 143, 3",
+                    "Location": 100.0
+                  }
+                ]
+              },
+              "Outline": true,
+              "OutlineSize": 2,
+              "OutlineColor": "222, 161, 35",
+              "OutlineUseGradient": false,
+              "OutlineGradient": {
+                "Type": "Horizontal",
+                "Colors": [
+                  {
+                    "Color": "0, 187, 138",
+                    "Location": 0.0
+                  },
+                  {
+                    "Color": "0, 105, 163",
+                    "Location": 100.0
+                  }
+                ]
+              },
+              "Shadow": false,
+              "ShadowOffset": "0, 5",
+              "ShadowColor": "125, 0, 0, 0",
+              "ShadowUseGradient": false,
+              "ShadowGradient": {
+                "Type": "Horizontal",
+                "Colors": [
+                  {
+                    "Color": "0, 187, 138",
+                    "Location": 0.0
+                  },
+                  {
+                    "Color": "0, 105, 163",
+                    "Location": 100.0
+                  }
+                ]
+              },
+              "Enabled": false
+            },
+            {
+              "$type": "ShareX.ImageEffectsLib.DrawTextEx, ShareX.ImageEffectsLib",
+              "Text": "",
+              "Placement": "TopLeft",
+              "Offset": "52, 10",
+              "Angle": 0,
+              "AutoHide": true,
+              "Font": "Segoe MDL2 Assets, 9pt",
+              "Color": "39, 201, 63",
+              "UseGradient": false,
+              "Gradient": {
+                "Type": "Horizontal",
+                "Colors": [
+                  {
+                    "Color": "0, 187, 138",
+                    "Location": 0.0
+                  },
+                  {
+                    "Color": "0, 105, 163",
+                    "Location": 100.0
+                  }
+                ]
+              },
+              "Outline": true,
+              "OutlineSize": 2,
+              "OutlineColor": "26, 171, 41",
+              "OutlineUseGradient": false,
+              "OutlineGradient": {
+                "Type": "Horizontal",
+                "Colors": [
+                  {
+                    "Color": "184, 11, 195",
+                    "Location": 0.0
+                  },
+                  {
+                    "Color": "98, 54, 255",
+                    "Location": 100.0
+                  }
+                ]
+              },
+              "Shadow": false,
+              "ShadowOffset": "0, 5",
+              "ShadowColor": "125, 0, 0, 0",
+              "ShadowUseGradient": false,
+              "ShadowGradient": {
+                "Type": "Horizontal",
+                "Colors": [
+                  {
+                    "Color": "184, 11, 195",
+                    "Location": 0.0
+                  },
+                  {
+                    "Color": "98, 54, 255",
+                    "Location": 100.0
+                  }
+                ]
+              },
+              "Enabled": false
+            },
+            {
+              "$type": "ShareX.ImageEffectsLib.DrawTextEx, ShareX.ImageEffectsLib",
+              "Text": "admin@snens.team",
+              "Placement": "TopLeft",
+              "Offset": "80, 12",
+              "Angle": 0,
+              "AutoHide": false,
+              "Font": "Segoe UI, 10pt",
+              "Color": "30, 30, 30",
+              "UseGradient": true,
+              "Gradient": {
+                "Type": "Horizontal",
+                "Colors": [
+                  {
+                    "Color": "184, 11, 195",
+                    "Location": 0.0
+                  },
+                  {
+                    "Color": "98, 54, 255",
+                    "Location": 100.0
+                  }
+                ]
+              },
+              "Outline": false,
+              "OutlineSize": 1,
+              "OutlineColor": "Black",
+              "OutlineUseGradient": false,
+              "OutlineGradient": {
+                "Type": "Horizontal",
+                "Colors": [
+                  {
+                    "Color": "0, 187, 138",
+                    "Location": 0.0
+                  },
+                  {
+                    "Color": "0, 105, 163",
+                    "Location": 100.0
+                  }
+                ]
+              },
+              "Shadow": false,
+              "ShadowOffset": "0, 5",
+              "ShadowColor": "125, 0, 0, 0",
+              "ShadowUseGradient": false,
+              "ShadowGradient": {
+                "Type": "Horizontal",
+                "Colors": [
+                  {
+                    "Color": "0, 187, 138",
+                    "Location": 0.0
+                  },
+                  {
+                    "Color": "0, 105, 163",
+                    "Location": 100.0
+                  }
+                ]
+              },
+              "Enabled": false
+            },
+            {
+              "$type": "ShareX.ImageEffectsLib.Shadow, ShareX.ImageEffectsLib",
+              "Opacity": 0.4,
+              "Size": 14,
+              "Darkness": 0.0,
+              "Color": "15, 42, 111",
+              "Offset": "0, 0",
+              "Enabled": true
+            },
+            {
+              "$type": "ShareX.ImageEffectsLib.Shadow, ShareX.ImageEffectsLib",
+              "Opacity": 0.2,
+              "Size": 6,
+              "Darkness": 3.0,
+              "Color": "15, 42, 111",
+              "Offset": "0, 0",
+              "Enabled": false
+            },
+            {
+              "$type": "ShareX.ImageEffectsLib.Shadow, ShareX.ImageEffectsLib",
+              "Opacity": 0.2,
+              "Size": 10,
+              "Darkness": 3.0,
+              "Color": "156, 13, 20",
+              "Offset": "0, 0",
+              "Enabled": true
+            },
+            {
+              "$type": "ShareX.ImageEffectsLib.DrawImage, ShareX.ImageEffectsLib",
+              "ImageLocation": "%ShareXImageEffects%\\Lisa\\ClipartKey_3103600.png",
+              "Placement": "BottomRight",
+              "Offset": "5, 29",
+              "SizeMode": "PercentageOfWatermark",
+              "Size": "26, 0",
+              "RotateFlip": "None",
+              "Tile": false,
+              "AutoHide": true,
+              "InterpolationMode": "HighQualityBicubic",
+              "CompositingMode": "SourceOver",
+              "Opacity": 100,
+              "Enabled": true
+            },
+            {
+              "$type": "ShareX.ImageEffectsLib.AutoCrop, ShareX.ImageEffectsLib",
+              "Sides": "Top, Bottom, Left, Right",
+              "Enabled": true
+            }
+          ]
+        },
+        {
+          "Name": "009DREAMSCAPE",
+          "Effects": [
+            {
+              "$type": "ShareX.ImageEffectsLib.DrawImage, ShareX.ImageEffectsLib",
+              "ImageLocation": "%ShareXImageEffects%\\Dream\\Hypercam_2_watermark.png",
+              "Placement": "TopLeft",
+              "Offset": "0, 0",
+              "SizeMode": "PercentageOfWatermark",
+              "Size": "220, 120",
+              "RotateFlip": "None",
+              "Tile": false,
+              "AutoHide": false,
+              "InterpolationMode": "NearestNeighbor",
+              "CompositingMode": "SourceOver",
+              "Opacity": 100,
+              "Enabled": true
+            },
+            {
+              "$type": "ShareX.ImageEffectsLib.Pixelate, ShareX.ImageEffectsLib",
+              "Size": 4,
+              "Enabled": true
+            },
+            {
+              "$type": "ShareX.ImageEffectsLib.Scale, ShareX.ImageEffectsLib",
+              "WidthPercentage": 100.0,
+              "HeightPercentage": 0.0,
+              "Enabled": false
+            },
+            {
+              "$type": "ShareX.ImageEffectsLib.DrawText, ShareX.ImageEffectsLib",
+              "Text": "Unregistered Hypercam 2",
+              "Placement": "BottomRight",
+              "Offset": "5, 5",
+              "AutoHide": false,
+              "TextFont": "Microsoft Sans Serif, 11.25pt",
+              "TextRenderingMode": "SystemDefault",
+              "TextColor": "235, 235, 235",
+              "DrawTextShadow": true,
+              "TextShadowColor": "Black",
+              "TextShadowOffset": "-1, -1",
+              "CornerRadius": 4,
+              "Padding": "5, 5, 5, 5",
+              "DrawBorder": true,
+              "BorderColor": "Black",
+              "BorderSize": 1,
+              "DrawBackground": true,
+              "BackgroundColor": "42, 47, 56",
+              "UseGradient": false,
+              "Gradient": {
+                "Type": "Vertical",
+                "Colors": [
+                  {
+                    "Color": "68, 120, 194",
+                    "Location": 0.0
+                  },
+                  {
+                    "Color": "13, 58, 122",
+                    "Location": 50.0
+                  },
+                  {
+                    "Color": "6, 36, 78",
+                    "Location": 50.0
+                  },
+                  {
+                    "Color": "23, 89, 174",
+                    "Location": 100.0
+                  }
+                ]
+              },
+              "Enabled": false
+            }
+          ]
+        },
+        {
+          "Name": "h",
+          "Effects": [
+            {
+              "$type": "ShareX.ImageEffectsLib.DrawTextEx, ShareX.ImageEffectsLib",
+              "Text": "www.Bandicam.com",
+              "Placement": "TopLeft",
+              "Offset": "130, 5",
+              "Angle": 0,
+              "AutoHide": false,
+              "Font": "Arial, 12pt",
+              "Color": "235, 235, 235",
+              "UseGradient": false,
+              "Gradient": {
+                "Type": "Horizontal",
+                "Colors": [
+                  {
+                    "Color": "184, 11, 195",
+                    "Location": 0.0
+                  },
+                  {
+                    "Color": "98, 54, 255",
+                    "Location": 100.0
+                  }
+                ]
+              },
+              "Outline": false,
+              "OutlineSize": 5,
+              "OutlineColor": "235, 0, 0",
+              "OutlineUseGradient": false,
+              "OutlineGradient": {
+                "Type": "Horizontal",
+                "Colors": [
+                  {
+                    "Color": "0, 187, 138",
+                    "Location": 0.0
+                  },
+                  {
+                    "Color": "0, 105, 163",
+                    "Location": 100.0
+                  }
+                ]
+              },
+              "Shadow": true,
+              "ShadowOffset": "0, 0",
+              "ShadowColor": "Black",
+              "ShadowUseGradient": false,
+              "ShadowGradient": {
+                "Type": "Horizontal",
+                "Colors": [
+                  {
+                    "Color": "184, 11, 195",
+                    "Location": 0.0
+                  },
+                  {
+                    "Color": "98, 54, 255",
+                    "Location": 100.0
+                  }
+                ]
+              },
+              "Enabled": true
+            }
+          ]
+        }
+      ],
+      "SelectedImageEffectPreset": 0,
+      "ShowImageEffectsWindowAfterCapture": false,
+      "ImageEffectOnlyRegionCapture": false,
+      "ThumbnailWidth": 200,
+      "ThumbnailHeight": 0,
+      "ThumbnailName": "-thumbnail",
+      "ThumbnailCheckSize": false
+    },
+    "UseDefaultCaptureSettings": true,
+    "CaptureSettings": {
+      "ShowCursor": false,
+      "ScreenshotDelay": 0.0,
+      "CaptureTransparent": false,
+      "CaptureShadow": true,
+      "CaptureShadowOffset": 20,
+      "CaptureClientArea": false,
+      "CaptureAutoHideTaskbar": false,
+      "CaptureCustomRegion": "0, 0, 0, 0",
+      "SurfaceOptions": {
+        "QuickCrop": true,
+        "MinimumSize": 5,
+        "RegionCaptureActionRightClick": "RemoveShapeCancelCapture",
+        "RegionCaptureActionMiddleClick": "SwapToolType",
+        "RegionCaptureActionX1Click": "CaptureFullscreen",
+        "RegionCaptureActionX2Click": "CaptureActiveMonitor",
+        "DetectWindows": true,
+        "DetectControls": true,
+        "UseDimming": true,
+        "UseCustomInfoText": false,
+        "CustomInfoText": "X: $x, Y: $y$nR: $r, G: $g, B: $b$nHex: $hex",
+        "SnapSizes": [
+          {
+            "Width": 426,
+            "Height": 240
+          },
+          {
+            "Width": 640,
+            "Height": 360
+          },
+          {
+            "Width": 854,
+            "Height": 480
+          },
+          {
+            "Width": 1280,
+            "Height": 720
+          },
+          {
+            "Width": 1920,
+            "Height": 1080
+          }
+        ],
+        "ShowInfo": false,
+        "ShowMagnifier": true,
+        "UseSquareMagnifier": false,
+        "MagnifierPixelCount": 29,
+        "MagnifierPixelSize": 10,
+        "ShowCrosshair": false,
+        "UseLightResizeNodes": false,
+        "EnableAnimations": true,
+        "IsFixedSize": false,
+        "FixedSize": "250, 250",
+        "ShowFPS": false,
+        "MenuIconSize": 16,
+        "MenuLocked": false,
+        "RememberMenuState": false,
+        "MenuCollapsed": false,
+        "MenuPosition": "0, 0",
+        "InputDelay": 500,
+        "SwitchToDrawingToolAfterSelection": false,
+        "SwitchToSelectionToolAfterDrawing": false,
+        "AnnotationOptions": {
+          "ImageInterpolationMode": "NearestNeighbor",
+          "StickerPacks": [
+            {
+              "FolderPath": "Stickers\\BlobEmoji",
+              "Name": "Blob Emoji"
+            }
+          ],
+          "SelectedStickerPack": 0,
+          "RegionCornerRadius": 0,
+          "BorderColor": "242, 60, 60",
+          "BorderSize": 4,
+          "BorderStyle": "Solid",
+          "FillColor": "0, 0, 0, 0",
+          "DrawingCornerRadius": 3,
+          "Shadow": true,
+          "ShadowColor": "125, 0, 0, 0",
+          "ShadowOffset": "0, 1",
+          "LineCenterPointCount": 1,
+          "ArrowHeadDirection": "End",
+          "TextOutlineOptions": {
+            "Font": "Helvetica Inserat LT Std",
+            "Size": 100,
+            "Color": "White",
+            "Bold": true,
+            "Italic": true,
+            "Underline": false,
+            "AlignmentHorizontal": "Center",
+            "AlignmentVertical": "Center",
+            "Gradient": false,
+            "Color2": "240, 240, 240",
+            "GradientMode": "Vertical",
+            "EnterKeyNewLine": false
+          },
+          "TextOutlineBorderColor": "242, 60, 60",
+          "TextOutlineBorderSize": 5,
+          "TextOptions": {
+            "Font": "Arial",
+            "Size": 18,
+            "Color": "White",
+            "Bold": false,
+            "Italic": false,
+            "Underline": false,
+            "AlignmentHorizontal": "Center",
+            "AlignmentVertical": "Center",
+            "Gradient": false,
+            "Color2": "240, 240, 240",
+            "GradientMode": "Vertical",
+            "EnterKeyNewLine": false
+          },
+          "TextBorderColor": "White",
+          "TextBorderSize": 0,
+          "TextFillColor": "242, 60, 60",
+          "LastImageFilePath": null,
+          "StepBorderColor": "White",
+          "StepBorderSize": 0,
+          "StepFillColor": "242, 60, 60",
+          "StepFontSize": 18,
+          "StepType": "Numbers",
+          "MagnifyStrength": 200,
+          "StickerSize": 64,
+          "LastStickerPath": null,
+          "BlurRadius": 35,
+          "PixelateSize": 15,
+          "HighlightColor": "Yellow"
+        },
+        "LastRegionTool": "RegionRectangle",
+        "LastAnnotationTool": "DrawingImage",
+        "LastEditorTool": "DrawingTextOutline",
+        "ImageEditorStartMode": "AutoSize",
+        "ImageEditorWindowState": {
+          "Location": "0, 0",
+          "Size": "0, 0",
+          "IsMaximized": false
+        },
+        "EditorAutoCopyImage": false,
+        "AutoCloseEditorOnTask": false,
+        "ShowEditorPanTip": true,
+        "ImageEditorResizeInterpolationMode": "Bicubic",
+        "EditorNewImageSize": "800, 600",
+        "EditorNewImageTransparent": false,
+        "EditorNewImageBackgroundColor": "White",
+        "EditorCanvasColor": "Transparent",
+        "ImageEffectPresets": [],
+        "SelectedImageEffectPreset": 0,
+        "ColorPickerOptions": {
+          "RecentColorsSelected": true
+        },
+        "ScreenColorPickerInfoText": ""
+      },
+      "FFmpegOptions": {
+        "OverrideCLIPath": false,
+        "CLIPath": "E:\\UserFolders\\Documents\\ShareX\\Tools\\ffmpeg.exe",
+        "VideoSource": "screen-capture-recorder",
+        "AudioSource": "virtual-audio-capturer",
+        "VideoCodec": "h264_nvenc",
+        "AudioCodec": "libvoaacenc",
+        "UserArgs": "",
+        "UseCustomCommands": false,
+        "CustomCommands": "-hide_banner -f dshow -thread_queue_size 1024 -rtbufsize 256M -audio_buffer_size 80 -framerate 30 -i video=\"screen-capture-recorder\":audio=\"virtual-audio-capturer\" -c:v h264_nvenc -r 30 -preset losslesshp -b:v 10000k -pix_fmt yuv420p -movflags +faststart -c:a aac -ac 2 -b:a 128k -y \"output.mp4\"",
+        "x264_Preset": "ultrafast",
+        "x264_CRF": 28,
+        "VPx_bitrate": 3000,
+        "XviD_qscale": 10,
+        "NVENC_preset": "losslesshp",
+        "NVENC_bitrate": 10000,
+        "GIFStatsMode": "full",
+        "GIFDither": "sierra2_4a",
+        "GIFBayerScale": 2,
+        "AMF_usage": "transcoding",
+        "AMF_quality": "speed",
+        "QSV_preset": "fast",
+        "QSV_bitrate": 3000,
+        "AAC_bitrate": 128,
+        "Opus_bitrate": 128,
+        "Vorbis_qscale": 3,
+        "MP3_qscale": 4
+      },
+      "ScreenRecordFPS": 30,
+      "GIFFPS": 15,
+      "ScreenRecordShowCursor": true,
+      "ScreenRecordAutoStart": true,
+      "ScreenRecordStartDelay": 1.0,
+      "ScreenRecordFixedDuration": false,
+      "ScreenRecordDuration": 3.0,
+      "ScreenRecordTwoPassEncoding": false,
+      "ScreenRecordAskConfirmationOnAbort": false,
+      "ScreenRecordTransparentRegion": false,
+      "ScrollingCaptureOptions": {
+        "TrimLeftEdge": 0,
+        "TrimTopEdge": 0,
+        "TrimRightEdge": 0,
+        "TrimBottomEdge": 0,
+        "CombineAdjustmentVertical": 0,
+        "CombineAdjustmentLastVertical": 0,
+        "IgnoreLast": 0,
+        "ScrollMethod": "Automatic",
+        "StartDelay": 500,
+        "ScrollDelay": 500,
+        "MaximumScrollCount": 20,
+        "StartSelectionAutomatically": true,
+        "StartCaptureAutomatically": false,
+        "ScrollTopMethodBeforeCapture": "All",
+        "AutoDetectScrollEnd": true,
+        "RemoveDuplicates": true,
+        "AfterCaptureAutomaticallyCombine": true,
+        "AutoUpload": false
+      },
+      "OCROptions": {
+        "Permission": false,
+        "DefaultLanguage": "eng",
+        "DefaultSite": "GoogleTranslate",
+        "Silent": false,
+        "ProcessOnLoad": true,
+        "AutoCopy": false
+      }
+    },
+    "UseDefaultUploadSettings": true,
+    "UploadSettings": {
+      "UseCustomTimeZone": false,
+      "CustomTimeZone": {
+        "Id": "UTC",
+        "DisplayName": "(UTC) Coordinated Universal Time",
+        "StandardName": "Coordinated Universal Time",
+        "DaylightName": "Coordinated Universal Time",
+        "BaseUtcOffset": "00:00:00",
+        "AdjustmentRules": null,
+        "SupportsDaylightSavingTime": false
+      },
+      "NameFormatPattern": "%ra{10}",
+      "NameFormatPatternActiveWindow": "%pn_%ra{10}",
+      "FileUploadUseNamePattern": false,
+      "FileUploadReplaceProblematicCharacters": false,
+      "URLRegexReplace": false,
+      "URLRegexReplacePattern": "^https?://(.+)$",
+      "URLRegexReplaceReplacement": "https://$1",
+      "ClipboardUploadURLContents": false,
+      "ClipboardUploadShortenURL": false,
+      "ClipboardUploadShareURL": false,
+      "ClipboardUploadAutoIndexFolder": false,
+      "UploaderFilters": []
+    },
+    "UseDefaultActions": true,
+    "ExternalPrograms": [
+      {
+        "IsActive": false,
+        "Name": "Paint",
+        "Path": "C:\\Windows\\system32\\mspaint.exe",
+        "Args": "%input",
+        "OutputExtension": null,
+        "Extensions": null,
+        "HiddenWindow": false,
+        "DeleteInputFile": false
+      },
+      {
+        "IsActive": false,
+        "Name": "Adobe Photoshop",
+        "Path": "C:\\Program Files\\Adobe\\Adobe Photoshop CC 2019\\Photoshop.exe",
+        "Args": "%input",
+        "OutputExtension": null,
+        "Extensions": null,
+        "HiddenWindow": false,
+        "DeleteInputFile": false
+      },
+      {
+        "IsActive": false,
+        "Name": "Paint.NET",
+        "Path": "C:\\Program Files\\paint.net\\PaintDotNet.exe",
+        "Args": "%input",
+        "OutputExtension": null,
+        "Extensions": null,
+        "HiddenWindow": false,
+        "DeleteInputFile": false
+      }
+    ],
+    "UseDefaultToolsSettings": true,
+    "ToolsSettings": {
+      "ScreenColorPickerFormat": "$hex",
+      "ScreenColorPickerFormatCtrl": "$r255, $g255, $b255",
+      "ScreenColorPickerInfoText": "RGB: $r255, $g255, $b255$nHex: $hex$nX: $x Y: $y",
+      "IndexerSettings": {
+        "Output": "Html",
+        "SkipHiddenFolders": true,
+        "SkipHiddenFiles": true,
+        "MaxDepthLevel": 0,
+        "ShowSizeInfo": true,
+        "AddFooter": true,
+        "IndentationText": "|___",
+        "AddEmptyLineAfterFolders": false,
+        "UseCustomCSSFile": false,
+        "DisplayPath": false,
+        "DisplayPathLimited": false,
+        "CustomCSSFilePath": "",
+        "UseAttribute": true,
+        "CreateParseableJson": true
+      },
+      "ImageCombinerOptions": {
+        "Orientation": "Vertical",
+        "Alignment": "LeftOrTop",
+        "Space": 0,
+        "AutoFillBackground": false
+      },
+      "VideoConverterOptions": {
+        "InputFilePath": null,
+        "OutputFolderPath": null,
+        "OutputFileName": null,
+        "VideoCodec": "x264",
+        "VideoQuality": 23,
+        "UseCustomArguments": false,
+        "CustomArguments": "",
+        "AutoOpenFolder": true
+      },
+      "VideoThumbnailOptions": {
+        "DefaultOutputDirectory": null,
+        "LastVideoPath": null,
+        "OutputLocation": "DefaultFolder",
+        "CustomOutputDirectory": "",
+        "ImageFormat": "PNG",
+        "ThumbnailCount": 9,
+        "FilenameSuffix": "_Thumbnail",
+        "RandomFrame": false,
+        "UploadThumbnails": true,
+        "KeepScreenshots": false,
+        "OpenDirectory": false,
+        "MaxThumbnailWidth": 512,
+        "CombineScreenshots": true,
+        "Padding": 10,
+        "Spacing": 10,
+        "ColumnCount": 3,
+        "AddVideoInfo": true,
+        "AddTimestamp": true,
+        "DrawShadow": true,
+        "DrawBorder": true
+      },
+      "BorderlessWindowSettings": {
+        "RememberWindowTitle": true,
+        "WindowTitle": null,
+        "AutoCloseWindow": false,
+        "ExcludeTaskbarArea": false
+      }
+    },
+    "UseDefaultAdvancedSettings": true,
+    "AdvancedSettings": {
+      "CapturePath": null,
+      "ProcessImagesDuringFileUpload": false,
+      "ProcessImagesDuringClipboardUpload": false,
+      "UseAfterCaptureTasksDuringFileUpload": true,
+      "TextTaskSaveAsFile": true,
+      "AutoClearClipboard": false,
+      "RegionCaptureDisableAnnotation": false,
+      "ImageExtensions": [
+        "jpg",
+        "jpeg",
+        "png",
+        "gif",
+        "bmp",
+        "ico",
+        "tif",
+        "tiff"
+      ],
+      "TextExtensions": [
+        "txt",
+        "log",
+        "nfo",
+        "c",
+        "cpp",
+        "cc",
+        "cxx",
+        "h",
+        "hpp",
+        "hxx",
+        "cs",
+        "vb",
+        "html",
+        "htm",
+        "xhtml",
+        "xht",
+        "xml",
+        "css",
+        "js",
+        "php",
+        "bat",
+        "java",
+        "lua",
+        "py",
+        "pl",
+        "cfg",
+        "ini",
+        "dart",
+        "go",
+        "gohtml"
+      ],
+      "EarlyCopyURL": false,
+      "TextFileExtension": "txt",
+      "TextFormat": "text",
+      "TextCustom": "",
+      "TextCustomEncodeInput": true,
+      "ResultForceHTTPS": false,
+      "ClipboardContentFormat": "$result",
+      "BalloonTipContentFormat": "$result",
+      "OpenURLFormat": "$result",
+      "AutoShortenURLLength": 0,
+      "AutoCloseAfterUploadForm": false,
+      "NamePatternMaxLength": 100,
+      "NamePatternMaxTitleLength": 50
+    },
+    "WatchFolderEnabled": false,
+    "WatchFolderList": []
+  },
+  "FirstTimeRunDate": "2019-03-21T19:22:46.2059928Z",
+  "FileUploadDefaultDirectory": "C:\\Users\\Lilly\\Videos\\Overwolf\\Outplayed\\Exports",
+  "NameParserAutoIncrementNumber": 0,
+  "QuickTaskPresets": [
+    {
+      "Name": "Save, Upload, Copy URL",
+      "AfterCaptureTasks": "SaveImageToFile, UploadImageToHost",
+      "AfterUploadTasks": "CopyURLToClipboard"
+    },
+    {
+      "Name": "Save, Copy image",
+      "AfterCaptureTasks": "CopyImageToClipboard, SaveImageToFile",
+      "AfterUploadTasks": "None"
+    },
+    {
+      "Name": "Save, Copy image file",
+      "AfterCaptureTasks": "SaveImageToFile, CopyFileToClipboard",
+      "AfterUploadTasks": "None"
+    },
+    {
+      "Name": "Annotate, Save, Upload, Copy URL",
+      "AfterCaptureTasks": "AnnotateImage, SaveImageToFile, UploadImageToHost",
+      "AfterUploadTasks": "CopyURLToClipboard"
+    },
+    {
+      "Name": null,
+      "AfterCaptureTasks": "None",
+      "AfterUploadTasks": "None"
+    },
+    {
+      "Name": "Upload, Copy URL",
+      "AfterCaptureTasks": "UploadImageToHost",
+      "AfterUploadTasks": "CopyURLToClipboard"
+    },
+    {
+      "Name": "Save",
+      "AfterCaptureTasks": "SaveImageToFile",
+      "AfterUploadTasks": "None"
+    },
+    {
+      "Name": "Copy image",
+      "AfterCaptureTasks": "CopyImageToClipboard",
+      "AfterUploadTasks": "None"
+    },
+    {
+      "Name": "Annotate",
+      "AfterCaptureTasks": "AnnotateImage",
+      "AfterUploadTasks": "None"
+    }
+  ],
+  "FirstTimeMinimizeToTray": false,
+  "TaskListViewColumnWidths": [
+    150,
+    60,
+    0,
+    75,
+    45,
+    45,
+    304
+  ],
+  "PreviewSplitterDistance": 335,
+  "Language": "Automatic",
+  "ShowTray": true,
+  "SilentRun": true,
+  "TrayIconProgressEnabled": false,
+  "TaskbarProgressEnabled": false,
+  "UseWhiteShareXIcon": false,
+  "RememberMainFormPosition": false,
+  "MainFormPosition": "-1390, 261",
+  "RememberMainFormSize": false,
+  "MainFormSize": "860, 525",
+  "TrayLeftClickAction": "None",
+  "TrayLeftDoubleClickAction": "None",
+  "TrayMiddleClickAction": "None",
+  "CheckPreReleaseUpdates": true,
+  "UseDarkTheme": true,
+  "UseCustomTheme": true,
+  "Themes": [
+    {
+      "Name": "Dark",
+      "BackgroundColor": "42, 47, 56",
+      "LightBackgroundColor": "52, 57, 65",
+      "DarkBackgroundColor": "28, 32, 38",
+      "TextColor": "235, 235, 235",
+      "BorderColor": "28, 32, 38",
+      "CheckerColor": "60, 60, 60",
+      "CheckerColor2": "50, 50, 50",
+      "CheckerSize": 15,
+      "LinkColor": "166, 212, 255",
+      "MenuHighlightColor": "30, 34, 40",
+      "MenuHighlightBorderColor": "116, 129, 152",
+      "MenuBorderColor": "22, 26, 31",
+      "MenuCheckBackgroundColor": "56, 64, 75",
+      "MenuFont": "Segoe UI, 9.75pt",
+      "ContextMenuFont": "Segoe UI, 10pt",
+      "ContextMenuOpacity": 90,
+      "SeparatorLightColor": "56, 64, 75",
+      "SeparatorDarkColor": "22, 26, 31"
+    },
+    {
+      "Name": "Light",
+      "BackgroundColor": "242, 242, 242",
+      "LightBackgroundColor": "247, 247, 247",
+      "DarkBackgroundColor": "235, 235, 235",
+      "TextColor": "69, 69, 69",
+      "BorderColor": "201, 201, 201",
+      "CheckerColor": "247, 247, 247",
+      "CheckerColor2": "235, 235, 235",
+      "CheckerSize": 15,
+      "LinkColor": "166, 212, 255",
+      "MenuHighlightColor": "247, 247, 247",
+      "MenuHighlightBorderColor": "96, 143, 226",
+      "MenuBorderColor": "201, 201, 201",
+      "MenuCheckBackgroundColor": "225, 233, 244",
+      "MenuFont": "Segoe UI, 9.75pt",
+      "ContextMenuFont": "Segoe UI, 10pt",
+      "ContextMenuOpacity": 95,
+      "SeparatorLightColor": "253, 253, 253",
+      "SeparatorDarkColor": "189, 189, 189"
+    },
+    {
+      "Name": "Nord Dark",
+      "BackgroundColor": "46, 52, 64",
+      "LightBackgroundColor": "59, 66, 82",
+      "DarkBackgroundColor": "38, 44, 57",
+      "TextColor": "229, 233, 240",
+      "BorderColor": "30, 38, 54",
+      "CheckerColor": "46, 52, 64",
+      "CheckerColor2": "36, 42, 54",
+      "CheckerSize": 15,
+      "LinkColor": "136, 192, 208",
+      "MenuHighlightColor": "36, 42, 54",
+      "MenuHighlightBorderColor": "24, 30, 42",
+      "MenuBorderColor": "24, 30, 42",
+      "MenuCheckBackgroundColor": "59, 66, 82",
+      "MenuFont": "Segoe UI, 9.75pt",
+      "ContextMenuFont": "Segoe UI, 10pt",
+      "ContextMenuOpacity": 100,
+      "SeparatorLightColor": "59, 66, 82",
+      "SeparatorDarkColor": "30, 38, 54"
+    },
+    {
+      "Name": "Nord Light",
+      "BackgroundColor": "229, 233, 240",
+      "LightBackgroundColor": "236, 239, 244",
+      "DarkBackgroundColor": "216, 222, 233",
+      "TextColor": "59, 66, 82",
+      "BorderColor": "207, 216, 233",
+      "CheckerColor": "229, 233, 240",
+      "CheckerColor2": "216, 222, 233",
+      "CheckerSize": 15,
+      "LinkColor": "106, 162, 178",
+      "MenuHighlightColor": "236, 239, 244",
+      "MenuHighlightBorderColor": "207, 216, 233",
+      "MenuBorderColor": "216, 222, 233",
+      "MenuCheckBackgroundColor": "229, 233, 240",
+      "MenuFont": "Segoe UI, 9.75pt",
+      "ContextMenuFont": "Segoe UI, 10pt",
+      "ContextMenuOpacity": 100,
+      "SeparatorLightColor": "236, 239, 244",
+      "SeparatorDarkColor": "207, 216, 233"
+    },
+    {
+      "Name": "Dracula",
+      "BackgroundColor": "40, 42, 54",
+      "LightBackgroundColor": "68, 71, 90",
+      "DarkBackgroundColor": "36, 38, 48",
+      "TextColor": "248, 248, 242",
+      "BorderColor": "33, 35, 43",
+      "CheckerColor": "40, 42, 54",
+      "CheckerColor2": "36, 38, 48",
+      "CheckerSize": 15,
+      "LinkColor": "98, 114, 164",
+      "MenuHighlightColor": "36, 38, 48",
+      "MenuHighlightBorderColor": "255, 121, 198",
+      "MenuBorderColor": "33, 35, 43",
+      "MenuCheckBackgroundColor": "45, 47, 61",
+      "MenuFont": "Segoe UI, 9.75pt",
+      "ContextMenuFont": "Segoe UI, 10pt",
+      "ContextMenuOpacity": 100,
+      "SeparatorLightColor": "45, 47, 61",
+      "SeparatorDarkColor": "33, 35, 43"
+    }
+  ],
+  "SelectedTheme": 4,
+  "UseCustomScreenshotsPath": false,
+  "CustomScreenshotsPath": "",
+  "SaveImageSubFolderPattern": "%y-%mo",
+  "SaveImageSubFolderPatternWindow": "",
+  "ShowMenu": true,
+  "TaskViewMode": "ListView",
+  "ShowThumbnailTitle": true,
+  "ThumbnailTitleLocation": "Top",
+  "ThumbnailSize": "200, 150",
+  "ThumbnailClickAction": "Default",
+  "ShowColumns": true,
+  "ImagePreview": "Automatic",
+  "ImagePreviewLocation": "Side",
+  "AutoCleanupBackupFiles": false,
+  "AutoCleanupLogFiles": false,
+  "CleanupKeepFileCount": 10,
+  "ProxySettings": {
+    "ProxyMethod": "Manual",
+    "Host": null,
+    "Port": 0,
+    "Username": null,
+    "Password": null
+  },
+  "UploadLimit": 5,
+  "BufferSizePower": 13,
+  "ClipboardContentFormats": [],
+  "MaxUploadFailRetry": 1,
+  "UseSecondaryUploaders": false,
+  "SecondaryImageUploaders": [
+    "Imgur",
+    "ImageShack",
+    "Flickr",
+    "Photobucket",
+    "Picasa",
+    "Twitter",
+    "Chevereto",
+    "Vgyme",
+    "CustomImageUploader",
+    "FileUploader"
+  ],
+  "SecondaryTextUploaders": [
+    "Pastebin",
+    "Paste2",
+    "Slexy",
+    "Paste_ee",
+    "Gist",
+    "Teknik",
+    "Upaste",
+    "Hastebin",
+    "OneTimeSecret",
+    "Pastie",
+    "CustomTextUploader",
+    "FileUploader"
+  ],
+  "SecondaryFileUploaders": [
+    "Dropbox",
+    "FTP",
+    "OneDrive",
+    "GoogleDrive",
+    "Puush",
+    "Box",
+    "Mega",
+    "AmazonS3",
+    "GoogleCloudStorage",
+    "AzureStorage",
+    "BackblazeB2",
+    "Gfycat",
+    "OwnCloud",
+    "MediaFire",
+    "Pushbullet",
+    "SendSpace",
+    "Localhostr",
+    "Jira",
+    "Lambda",
+    "VideoBin",
+    "Teknik",
+    "Pomf",
+    "Uguu",
+    "Seafile",
+    "Streamable",
+    "Sul",
+    "Lithiio",
+    "Transfersh",
+    "Plik",
+    "YouTube",
+    "SharedFolder",
+    "Email",
+    "CustomFileUploader",
+    "Vault_ooo"
+  ],
+  "HistorySaveTasks": true,
+  "HistoryCheckURL": false,
+  "RecentTasks": [
+    {
+      "FilePath": null,
+      "URL": "https://exit-scam.wtf/L6dCAcnrXU5Y",
+      "ThumbnailURL": "",
+      "DeletionURL": "",
+      "ShortenedURL": null,
+      "Time": "2022-03-09T12:36:02.7746587Z"
+    },
+    {
+      "FilePath": null,
+      "URL": "https://intave.cleaning/T2H3zBqae8Oc",
+      "ThumbnailURL": "",
+      "DeletionURL": "",
+      "ShortenedURL": null,
+      "Time": "2022-03-09T13:26:32.1415589Z"
+    },
+    {
+      "FilePath": null,
+      "URL": "https://intave.download/OJoSfvjGxJmc",
+      "ThumbnailURL": "",
+      "DeletionURL": "",
+      "ShortenedURL": null,
+      "Time": "2022-03-09T16:38:55.9763567Z"
+    },
+    {
+      "FilePath": null,
+      "URL": "https://intave.sexy/XrrkfinwdKkM",
+      "ThumbnailURL": "",
+      "DeletionURL": "",
+      "ShortenedURL": null,
+      "Time": "2022-03-09T17:21:22.4752867Z"
+    },
+    {
+      "FilePath": null,
+      "URL": "https://thiccthighs.store/JUWNa49HV3fu",
+      "ThumbnailURL": "",
+      "DeletionURL": "",
+      "ShortenedURL": null,
+      "Time": "2022-03-09T17:32:37.3622766Z"
+    },
+    {
+      "FilePath": null,
+      "URL": "https://intave.club/rUJwhPRQfO5C",
+      "ThumbnailURL": "",
+      "DeletionURL": "",
+      "ShortenedURL": null,
+      "Time": "2022-03-09T17:40:35.8479815Z"
+    },
+    {
+      "FilePath": null,
+      "URL": "https://gommeschwitzer.club/2tSwckwc5935",
+      "ThumbnailURL": "",
+      "DeletionURL": "",
+      "ShortenedURL": null,
+      "Time": "2022-03-09T17:40:49.8495138Z"
+    },
+    {
+      "FilePath": null,
+      "URL": "https://exit-scam.wtf/tdMOYjAzIIrP",
+      "ThumbnailURL": "",
+      "DeletionURL": "",
+      "ShortenedURL": null,
+      "Time": "2022-03-09T22:48:15.3868855Z"
+    },
+    {
+      "FilePath": null,
+      "URL": "https://exit-scam.wtf/jXyW1LCU03lp",
+      "ThumbnailURL": "",
+      "DeletionURL": "",
+      "ShortenedURL": null,
+      "Time": "2022-03-09T22:55:17.4375915Z"
+    },
+    {
+      "FilePath": null,
+      "URL": "https://gommeschwitzer.club/PtDeYwM03uG3",
+      "ThumbnailURL": "",
+      "DeletionURL": "",
+      "ShortenedURL": null,
+      "Time": "2022-03-09T22:59:21.4017512Z"
+    }
+  ],
+  "RecentTasksSave": true,
+  "RecentTasksMaxCount": 10,
+  "RecentTasksShowInMainWindow": true,
+  "RecentTasksShowInTrayMenu": true,
+  "RecentTasksTrayMenuMostRecentFirst": false,
+  "HistorySettings": {
+    "RememberWindowState": true,
+    "WindowState": {
+      "Location": "0, 0",
+      "Size": "0, 0",
+      "IsMaximized": false
+    },
+    "SplitterDistance": 550,
+    "MaxItemCount": 0,
+    "RememberSearchText": false,
+    "SearchText": ""
+  },
+  "ImageHistorySettings": {
+    "RememberWindowState": true,
+    "WindowState": {
+      "Location": "0, 0",
+      "Size": "0, 0",
+      "IsMaximized": false
+    },
+    "ThumbnailSize": "150, 150",
+    "MaxItemCount": 250,
+    "FilterMissingFiles": false,
+    "RememberSearchText": false,
+    "SearchText": ""
+  },
+  "DontShowPrintSettingsDialog": true,
+  "PrintSettings": {
+    "Margin": 5,
+    "AutoRotateImage": true,
+    "AutoScaleImage": true,
+    "AllowEnlargeImage": false,
+    "CenterImage": false,
+    "TextFont": {
+      "FontFamily": "Arial",
+      "Size": 10.0,
+      "Style": "Regular",
+      "GraphicsUnit": "Point"
+    },
+    "ShowPrintDialog": false,
+    "DefaultPrinterOverride": ""
+  },
+  "AutoCaptureRegion": "0, 0, 0, 0",
+  "AutoCaptureRepeatTime": 60.0,
+  "AutoCaptureMinimizeToTray": true,
+  "AutoCaptureWaitUpload": true,
+  "ScreenRecordRegion": "182, 183, 1233, 652",
+  "ActionsToolbarList": [
+    "RectangleRegion",
+    "PrintScreen",
+    "ScreenRecorder",
+    "None",
+    "FileUpload",
+    "ClipboardUploadWithContentViewer"
+  ],
+  "ActionsToolbarRunAtStartup": false,
+  "ActionsToolbarPosition": "1190, 818",
+  "ActionsToolbarLockPosition": false,
+  "ActionsToolbarStayTopMost": true,
+  "RecentColors": [
+    "156, 13, 20",
+    "15, 42, 111",
+    "30, 30, 30",
+    "219, 219, 219",
+    "White"
+  ],
+  "AutoCheckUpdate": true,
+  "BinaryUnits": false,
+  "ShowMostRecentTaskFirst": false,
+  "WorkflowsOnlyShowEdited": false,
+  "TrayAutoExpandCaptureMenu": true,
+  "ShowMainWindowTip": true,
+  "BrowserPath": "",
+  "SaveSettingsAfterTaskCompleted": false,
+  "AutoSelectLastCompletedTask": false,
+  "DevMode": false,
+  "DisableHotkeys": false,
+  "DisableHotkeysOnFullscreen": false,
+  "HotkeyRepeatLimit": 1000,
+  "ShowClipboardContentViewer": true,
+  "DefaultClipboardCopyImageFillBackground": true,
+  "UseAlternativeClipboardCopyImage": false,
+  "UseAlternativeClipboardGetImage": false,
+  "RotateImageByExifOrientationData": true,
+  "PNGStripColorSpaceInformation": false,
+  "DisableUpload": false,
+  "AcceptInvalidSSLCertificates": false,
+  "URLEncodeIgnoreEmoji": true,
+  "ShowUploadWarning": false,
+  "ShowMultiUploadWarning": true,
+  "ShowLargeFileSizeWarning": 0,
+  "CustomUploadersConfigPath": null,
+  "CustomHotkeysConfigPath": null,
+  "CustomScreenshotsPath2": null,
+  "DropSize": 150,
+  "DropOffset": 5,
+  "DropAlignment": "BottomRight",
+  "DropOpacity": 100,
+  "DropHoverOpacity": 255,
+  "ApplicationVersion": "13.7.0"
+}
