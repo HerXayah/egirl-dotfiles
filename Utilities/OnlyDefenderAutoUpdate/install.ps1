@@ -8,7 +8,10 @@ $folder = "C:\Logs"
 $windowsFolder = "C:\Windows"
 $currentFolder = Get-Location
 
-copy $currentFolder\UpdateDefender.cmd $windowsFolder\UpdateDefender.cmd
+#if files already exist, skip them
+if(!(Test-Path $windowsFolder\UpdateDefender.cmd)){
+    copy $currentFolder\UpdateDefender.cmd $windowsFolder\UpdateDefender.cmd
+}
 
 #$DurationTimeSpanIndefinite = ([TimeSpan]::MaxValue) 
 
