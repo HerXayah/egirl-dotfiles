@@ -1,3 +1,5 @@
+#Requires -RunAsAdministrator
+
 Write-Host "Starting Installation..."
 Write-Host "Waiting three seconds to see if you cancel"
 Start-Sleep -s 3
@@ -7,7 +9,7 @@ $currentFolder = Get-Location
 
 powershell.exe -NoLogo -NonInteractive -NoProfile -ExecutionPolicy Bypass -Command "pip install liquidctl"
 
-Write-Host "Installing Scoop Complete"
+Write-Host "Installing Complete"
 Start-Sleep -s 2
 Clear-Host
 
@@ -22,12 +24,12 @@ if(!(Test-Path $windowsFolder\libusb-1.0.dll)){
 }
 
 # run task on login
-$trigger = New-ScheduledTaskTrigger -AtLogon -Enabled
+$trigger = New-ScheduledTaskTrigger -AtLogon
 # Run task as user
 $User= [System.Security.Principal.WindowsIdentity]::GetCurrent().Name
 $principal = New-ScheduledTaskPrincipal -User $User -RunLevel Highest
 $action = New-ScheduledTaskAction -Execute 'C:\Windows\Liquidctl.cmd' 
-$settings = New-ScheduledTaskSettingsSet -RunOnlyIfNetworkAvailable -WakeToRun -Hidden -ExecutionTimeLimit (New-TimeSpan -Minutes 5) -MultipleInstances IgnoreNew
+$settings = New-ScheduledTaskSettingsSet -RunOnlyIfNetworkAvailable -WakeToRun -Hidden -ExecutionTimeLimit (New-TimeSpan -Seconds 20) -MultipleInstances IgnoreNew
 $task = New-ScheduledTask -Action $action -Trigger $trigger -Principal $principal -Settings $settings
 
 
