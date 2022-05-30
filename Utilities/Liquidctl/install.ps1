@@ -19,9 +19,6 @@ Write-Host "Installing Liquidctl for Kraken Watercoolers"
 if(!(Test-Path $windowsFolder\Liquidctl.cmd)){
     copy $currentFolder\Liquidctl.cmd $windowsFolder\Liquidctl.cmd
 }
-if(!(Test-Path $windowsFolder\libusb-1.0.dll)){
-    copy $currentFolder\libusb-1.0.dll $windowsFolder\libusb-1.0.dll
-}
 
 # run task on login
 $trigger = New-ScheduledTaskTrigger -AtStartup
