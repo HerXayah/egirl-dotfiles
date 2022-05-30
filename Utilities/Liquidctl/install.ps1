@@ -24,7 +24,7 @@ if(!(Test-Path $windowsFolder\libusb-1.0.dll)){
 }
 
 # run task on login
-$trigger = New-ScheduledTaskTrigger -AtLogon
+$trigger = New-ScheduledTaskTrigger -AtStartup
 # Run task as user
 $User= [System.Security.Principal.WindowsIdentity]::GetCurrent().Name
 $principal = New-ScheduledTaskPrincipal -User $User -RunLevel Highest
