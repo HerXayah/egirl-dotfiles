@@ -16,8 +16,8 @@ Clear-Host
 Write-Host "Installing Liquidctl for Kraken Watercoolers"
 
 #if files already exist, skip them
-if(!(Test-Path $windowsFolder\Liquidctl.cmd)){
-    copy $currentFolder\Liquidctl.cmd $windowsFolder\Liquidctl.cmd
+if(!(Test-Path $windowsFolder\AutoLiquidctl.cmd)){
+    copy $currentFolder\AutoLiquidctl.cmd $windowsFolder\AutoLiquidctl.cmd
 }
 
 # run task on login
@@ -25,7 +25,7 @@ $trigger = New-ScheduledTaskTrigger -AtStartup
 # Run task as user
 $User= [System.Security.Principal.WindowsIdentity]::GetCurrent().Name
 $principal = New-ScheduledTaskPrincipal -User $User -RunLevel Highest
-$action = New-ScheduledTaskAction -Execute 'C:\Windows\Liquidctl.cmd' 
+$action = New-ScheduledTaskAction -Execute 'C:\Windows\AutoLiquidctl.cmd' 
 $settings = New-ScheduledTaskSettingsSet -RunOnlyIfNetworkAvailable -WakeToRun -Hidden -ExecutionTimeLimit (New-TimeSpan -Seconds 20) -MultipleInstances IgnoreNew
 $task = New-ScheduledTask -Action $action -Trigger $trigger -Principal $principal -Settings $settings
 
