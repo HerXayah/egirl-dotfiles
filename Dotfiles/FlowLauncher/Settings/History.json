@@ -1,0 +1,24 @@
+{
+  "Items": [
+    {
+      "Query": "pm install SpotifyPremium",
+      "ExecutedDateTime": "2022-07-10T21:34:42.2528213+02:00"
+    },
+    {
+      "Query": "pm install GitHub",
+      "ExecutedDateTime": "2022-07-10T21:35:13.7930972+02:00"
+    },
+    {
+      "Query": "sp",
+      "ExecutedDateTime": "2022-07-10T21:35:23.8746827+02:00"
+    },
+    {
+      "Query": "pm install Quick Uninstaller",
+      "ExecutedDateTime": "2022-07-10T21:35:50.5460779+02:00"
+    },
+    {
+      "Query": "sp",
+      "ExecutedDateTime": "2022-07-10T21:38:40.1237728+02:00"
+    }
+  ]
+}

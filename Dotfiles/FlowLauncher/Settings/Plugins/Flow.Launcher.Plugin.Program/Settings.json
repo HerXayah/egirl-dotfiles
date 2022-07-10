@@ -1,0 +1,16 @@
+{
+  "LastIndexTime": "2022-07-10T00:00:00+02:00",
+  "ProgramSources": [],
+  "DisabledProgramSources": [],
+  "ProgramSuffixes": [
+    "appref-ms",
+    "exe",
+    "lnk"
+  ],
+  "EnableStartMenuSource": true,
+  "EnableDescription": false,
+  "HideAppsPath": true,
+  "EnableRegistrySource": true,
+  "CustomizedExplorer": "explorer",
+  "CustomizedArgs": "%s"
+}

@@ -1,0 +1,9 @@
+{
+  "Shell": 0,
+  "ReplaceWinR": true,
+  "LeaveShellOpen": false,
+  "RunAsAdministrator": true,
+  "ShowOnlyMostUsedCMDs": false,
+  "ShowOnlyMostUsedCMDsNumber": 5,
+  "CommandHistory": {}
+}

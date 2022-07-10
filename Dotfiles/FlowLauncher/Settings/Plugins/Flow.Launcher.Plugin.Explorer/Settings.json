@@ -1,0 +1,18 @@
+{
+  "MaxResult": 100,
+  "QuickAccessLinks": [],
+  "QuickFolderAccessLinks": [],
+  "UseWindowsIndexForDirectorySearch": true,
+  "IndexSearchExcludedSubdirectoryPaths": [],
+  "SearchActionKeyword": "*",
+  "SearchActionKeywordEnabled": true,
+  "FileContentSearchActionKeyword": "doc:",
+  "FileContentSearchKeywordEnabled": true,
+  "PathSearchActionKeyword": "*",
+  "PathSearchKeywordEnabled": false,
+  "IndexSearchActionKeyword": "*",
+  "IndexSearchKeywordEnabled": false,
+  "QuickAccessActionKeyword": "*",
+  "QuickAccessKeywordEnabled": false,
+  "WarnWindowsSearchServiceOff": true
+}
