@@ -419,10 +419,10 @@ Reg.exe add "HKCU\SOFTWARE\Policies\Microsoft\Windows\Explorer" /v "HidePeopleBa
 Reg.exe add "HKCU\SOFTWARE\Policies\Microsoft\Windows\Explorer" /v "NoPinningStoreToTaskbar" /t REG_DWORD /d "1" /f
 Reg.exe add "HKCU\SOFTWARE\Policies\Microsoft\Windows\Explorer" /v "DisableSearchBoxSuggestions" /t REG_DWORD /d "1" /f
 cls
-echo "Do you want to disable even MORE Privacy Stuff?"
-read -r answer
-case $answer in
-    [yY][eE][sS]|[yY])
+echo "If you wannanot frick ur system maybe *for me it works atleast*, continue AFTER this long block of text"
+timeout /t 10 
+
+
 echo disabling diagnostics and telemetry
 sc stop dmwappushservice
 net stop dmwappushservice 
@@ -4270,10 +4270,9 @@ Reg.exe add "HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\WINEVT\Channels\WMPS
 Reg.exe add "HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\WINEVT\Channels\WMPSyncEngine" /v "ChannelAccess" /t REG_SZ /d "O:BAG:SYD:(A0x2S-1-15-2-1)(A0x2S-1-15-3-1024-3153509613-960666767-3724611135-2725662640-12138253-543910227-1950414635-4190290187)(A0xf0007SY)(A0x7BA)(A0x7SO)(A0x3IU)(A0x3SU)(A0x3S-1-5-3)(A0x3S-1-5-33)(A0x1S-1-5-32-573)" /f
 Reg.exe add "HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\WINEVT\Channels\WMPSyncEngine" /v "Type" /t REG_DWORD /d "2" /f
 cls
-        ;;
-    [nN][oO]|[nN])
-        echo "aight small one then"
-        sc stop dmwappushservice
+  
+echo "aight small one then"
+sc stop dmwappushservice
 net stop dmwappushservice 
 sc config dmwappushservice start= disabled
 net stop diagnosticshub.standardcollector.service > NUL 2>&1
@@ -4292,11 +4291,6 @@ Reg.exe add "HKLM\SOFTWARE\Policies\Microsoft\Windows\LocationAndSensors" /v "Di
 Reg.exe add "HKLM\SOFTWARE\Policies\Microsoft\Windows\LocationAndSensors" /v "DisableLocationScripting" /t REG_DWORD /d "1" /f
 Reg.exe add "HKLM\SOFTWARE\Policies\Microsoft\Windows\DataCollection" /v "AllowTelemetry" /t REG_DWORD /d "0" /f
 Reg.exe add "HKLM\SOFTWARE\Policies\Microsoft\Windows\DataCollection" /v "DoNotShowFeedbackNotifications" /t REG_DWORD /d "1" /f
-        ;;
-    *)
-        echo "Invalid answer"
-        ;;
-esac
 cls
 echo Extra Stuff
 
