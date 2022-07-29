@@ -7,27 +7,17 @@ Start-Sleep -s 3
 $folder = "C:\Logs"
 $windowsFolder = "C:\Windows"
 $currentFolder = Get-Location
+$User= "NT AUTHORITY\SYSTEM"
 
 #if files already exist, skip them
 if(!(Test-Path $windowsFolder\UpdateDefender.cmd)){
     copy $currentFolder\UpdateDefender.cmd $windowsFolder\UpdateDefender.cmd
 }
+else {
 
-#$DurationTimeSpanIndefinite = ([TimeSpan]::MaxValue) 
+    Write-Host "Update Defender already exists, skipping..."
 
-# every 5 hours for Indefinitely
-$trigger = New-ScheduledTaskTrigger `
-    -Once `
-    -At (Get-Date) `
-    -RepetitionInterval (New-TimeSpan -Hours 6) `
-    -RepetitionDuration (New-TimeSpan -Days (365 * 68)) `
-    -ThrottleLimit 1 `
-# Run task as system
-$User= "NT AUTHORITY\SYSTEM"
-$principal = New-ScheduledTaskPrincipal -User $User -RunLevel Highest
-$action = New-ScheduledTaskAction -Execute 'C:\Windows\UpdateDefender.cmd' 
-$settings = New-ScheduledTaskSettingsSet -RunOnlyIfNetworkAvailable -WakeToRun -Hidden -ExecutionTimeLimit (New-TimeSpan -Minutes 5) -MultipleInstances IgnoreNew
-$task = New-ScheduledTask -Action $action -Trigger $trigger -Principal $principal -Settings $settings
+}
 
 
 #if task exists, skip
@@ -35,7 +25,7 @@ if (Get-ScheduledTask -TaskName "UpdateDefender" -ErrorAction SilentlyContinue) 
     Write-Host "Task already exists"
     } else {
     Write-Host "Creating Task"
-Register-ScheduledTask UpdateDefender -InputObject $task
+Register-ScheduledTask -Xml (Get-Content 'UpdateDefender.xml' | out-string) -TaskName "UpdateDefender" -User $User
 Enable-ScheduledTask -TaskName 'UpdateDefender'
 }
 
@@ -49,5 +39,4 @@ if (Test-Path $folder) {
 }
 
 Write-Host "Installation Complete"
-Start-Sleep -s 2
-Write-Host "You can change the Windows Version and set it to indefinite via TaskSchedule.msc"
+exit
