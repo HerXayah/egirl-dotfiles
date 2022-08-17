@@ -23,8 +23,3 @@ if (Get-ScheduledTask -TaskName "EmptyStandbyList" -ErrorAction SilentlyContinue
 Register-ScheduledTask -Xml (Get-Content 'EmptyStandbyList.xml' | out-string) -TaskName "EmptyStandbyList" -User $User
 Enable-ScheduledTask -TaskName 'EmptyStandbyList'
 }
-
-
-Write-Host "Installation Complete"
-Start-Sleep -s 2
-Write-Host "You can change the Windows Version and set it to indefinite via TaskSchedule.msc"
