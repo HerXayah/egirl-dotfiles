@@ -1,6 +1,6 @@
 # ===== WINFETCH CONFIGURATION =====
 
- $image = "C:\Users\Lilly\.config\winfetch\winfetch.png"
+ $image = "C:\Users\Sarah\.config\winfetch\winfetch.png"
  $noimage = $false
 
 # Set the version of Windows to derive the logo from.
@@ -23,12 +23,12 @@
 # Configure which disks are shown
 # $ShowDisks = @("C:", "D:")
 # Show all available disks
-# $ShowDisks = @("*")
+ $ShowDisks = @("*")
 
 # Configure which package managers are shown
 # disabling unused ones will improve speed
  #$ShowPkgs = @("winget", "scoop", "choco")
- $ShowPkgs = @("winget", "scoop")
+ $ShowPkgs = @("scoop")
 
 # Use the following option to specify custom package managers.
 # Create a function with that name as suffix, and which returns
@@ -46,10 +46,10 @@
 # 'bar' is for bar only.
 # 'textbar' is for text + bar.
 # 'bartext' is for bar + text.
-# $cpustyle = 'bar'
-# $memorystyle = 'textbar'
-# $diskstyle = 'bartext'
-# $batterystyle = 'bartext'
+ $cpustyle = 'textbar'
+ $memorystyle = 'textbar'
+ $diskstyle = 'bartext'
+ $batterystyle = 'bartext'
 
 
 # Remove the '#' from any of the lines in
@@ -65,7 +65,7 @@
     # "custom_time"  # use custom info line
     "uptime"
      #"ps_pkgs"  # takes some time
-    #"pkgs"
+    "pkgs"
     #"pwsh"
     "resolution"
     "terminal"
