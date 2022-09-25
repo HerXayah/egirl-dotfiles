@@ -6,3 +6,5 @@ some configs. this that dotfile shit
 
 mirrored at
 https://git.thicc-thighs.de/Sarah/egirl-dotfiles
+
+test
