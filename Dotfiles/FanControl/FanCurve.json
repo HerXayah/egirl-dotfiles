@@ -1,0 +1,324 @@
+{
+  "__VERSION__": "136",
+  "Main": {
+    "Controls": [
+      {
+        "Enable": false,
+        "ForceApply": false,
+        "Identifier": "/lpc/nct6797d/control/0",
+        "IsHidden": true,
+        "ManualControl": false,
+        "ManualControlValue": 50,
+        "MatchingFanSensor": null,
+        "Name": "Fan #1",
+        "NickName": "Fan #1",
+        "SelectedCommandStepDown": 8.0,
+        "SelectedCommandStepUp": 8.0,
+        "SelectedFanCurve": null,
+        "SelectedOffset": 0,
+        "SelectedStart": 0,
+        "SelectedStop": 0
+      },
+      {
+        "Enable": true,
+        "ForceApply": false,
+        "Identifier": "/lpc/nct6797d/control/1",
+        "IsHidden": false,
+        "ManualControl": false,
+        "ManualControlValue": 50,
+        "MatchingFanSensor": {
+          "Identifier": "/lpc/nct6797d/fan/1",
+          "IsHidden": true,
+          "Name": "Fan #2",
+          "NickName": "Fan #2"
+        },
+        "Name": "Fan #2",
+        "NickName": "Top Fans",
+        "SelectedCommandStepDown": 8.0,
+        "SelectedCommandStepUp": 8.0,
+        "SelectedFanCurve": {
+          "MaximumTemperature": 120,
+          "MinimumTemperature": 20,
+          "Name": "Top",
+          "OneWayHysteresis": false,
+          "Points": [
+            "35.50387596899225,36.42844444444445",
+            "51.31782945736434,40.428444444444445",
+            "59.689922480620154,49.76177777777778",
+            "73.6,52.7",
+            "80.7751937984496,60.16177777777778"
+          ],
+          "SelectedHysteresis": 2.0,
+          "SelectedResponseTime": 1,
+          "SelectedTempSource": {
+            "Identifier": "/amdcpu/0/temperature/2",
+            "IsHidden": false,
+            "Name": "Core (Tctl/Tdie)",
+            "NickName": "Core (Tctl/Tdie)"
+          }
+        },
+        "SelectedOffset": 0,
+        "SelectedStart": 0,
+        "SelectedStop": 0
+      },
+      {
+        "Enable": false,
+        "ForceApply": false,
+        "Identifier": "/lpc/nct6797d/control/2",
+        "IsHidden": true,
+        "ManualControl": false,
+        "ManualControlValue": 50,
+        "MatchingFanSensor": null,
+        "Name": "Fan #3",
+        "NickName": "Fan #3",
+        "SelectedCommandStepDown": 8.0,
+        "SelectedCommandStepUp": 8.0,
+        "SelectedFanCurve": null,
+        "SelectedOffset": 0,
+        "SelectedStart": 0,
+        "SelectedStop": 0
+      },
+      {
+        "Enable": true,
+        "ForceApply": false,
+        "Identifier": "/lpc/nct6797d/control/3",
+        "IsHidden": false,
+        "ManualControl": false,
+        "ManualControlValue": 50,
+        "MatchingFanSensor": {
+          "Identifier": "/lpc/nct6797d/fan/3",
+          "IsHidden": true,
+          "Name": "Fan #4",
+          "NickName": "Fan #4"
+        },
+        "Name": "Fan #4",
+        "NickName": "Bottom and Side",
+        "SelectedCommandStepDown": 8.0,
+        "SelectedCommandStepUp": 8.0,
+        "SelectedFanCurve": {
+          "MaximumTemperature": 120,
+          "MinimumTemperature": 20,
+          "Name": "Bottom and Side",
+          "OneWayHysteresis": false,
+          "Points": [
+            "35.038759689922486,32.69511111111112",
+            "51.31782945736434,35.895111111111106",
+            "59.37984496124031,44.69511111111112",
+            "72.40310077519379,47.89511111111111",
+            "80.3,53.8"
+          ],
+          "SelectedHysteresis": 2.0,
+          "SelectedResponseTime": 1,
+          "SelectedTempSource": {
+            "Identifier": "/amdcpu/0/temperature/2",
+            "IsHidden": false,
+            "Name": "Core (Tctl/Tdie)",
+            "NickName": "Core (Tctl/Tdie)"
+          }
+        },
+        "SelectedOffset": 0,
+        "SelectedStart": 0,
+        "SelectedStop": 0
+      },
+      {
+        "Enable": false,
+        "ForceApply": false,
+        "Identifier": "/lpc/nct6797d/control/4",
+        "IsHidden": true,
+        "ManualControl": false,
+        "ManualControlValue": 50,
+        "MatchingFanSensor": null,
+        "Name": "Fan #5",
+        "NickName": "Fan #5",
+        "SelectedCommandStepDown": 8.0,
+        "SelectedCommandStepUp": 8.0,
+        "SelectedFanCurve": null,
+        "SelectedOffset": 0,
+        "SelectedStart": 0,
+        "SelectedStop": 0
+      },
+      {
+        "Enable": false,
+        "ForceApply": false,
+        "Identifier": "/lpc/nct6797d/control/5",
+        "IsHidden": true,
+        "ManualControl": false,
+        "ManualControlValue": 50,
+        "MatchingFanSensor": null,
+        "Name": "Fan #6",
+        "NickName": "Fan #6",
+        "SelectedCommandStepDown": 8.0,
+        "SelectedCommandStepUp": 8.0,
+        "SelectedFanCurve": null,
+        "SelectedOffset": 0,
+        "SelectedStart": 0,
+        "SelectedStop": 0
+      },
+      {
+        "Enable": false,
+        "ForceApply": false,
+        "Identifier": "/lpc/nct6797d/control/6",
+        "IsHidden": true,
+        "ManualControl": false,
+        "ManualControlValue": 50,
+        "MatchingFanSensor": null,
+        "Name": "Fan #7",
+        "NickName": "Fan #7",
+        "SelectedCommandStepDown": 8.0,
+        "SelectedCommandStepUp": 8.0,
+        "SelectedFanCurve": null,
+        "SelectedOffset": 0,
+        "SelectedStart": 0,
+        "SelectedStop": 0
+      },
+      {
+        "Enable": false,
+        "ForceApply": false,
+        "Identifier": "NVApiWrapper/9728/control/0",
+        "IsHidden": false,
+        "ManualControl": false,
+        "ManualControlValue": 50,
+        "MatchingFanSensor": {
+          "Identifier": "NVApiWrapper/9728/fan/0",
+          "IsHidden": true,
+          "Name": "Fan 1 - NVIDIA GeForce RTX 2070",
+          "NickName": "Fan 1 - NVIDIA GeForce RTX 2070"
+        },
+        "Name": "Control 1 - NVIDIA GeForce RTX 2070",
+        "NickName": "Control 1 - NVIDIA GeForce RTX 2070",
+        "SelectedCommandStepDown": 8.0,
+        "SelectedCommandStepUp": 8.0,
+        "SelectedFanCurve": null,
+        "SelectedOffset": 0,
+        "SelectedStart": 0,
+        "SelectedStop": 0
+      }
+    ],
+    "CustomSensors": [],
+    "DisplayTrayIconTemperature": false,
+    "FanCurves": [
+      {
+        "MaximumTemperature": 120,
+        "MinimumTemperature": 20,
+        "Name": "Top",
+        "OneWayHysteresis": false,
+        "Points": [
+          "35.50387596899225,36.42844444444445",
+          "51.31782945736434,40.428444444444445",
+          "59.689922480620154,49.76177777777778",
+          "73.6,52.7",
+          "80.7751937984496,60.16177777777778"
+        ],
+        "SelectedHysteresis": 2.0,
+        "SelectedResponseTime": 1,
+        "SelectedTempSource": {
+          "Identifier": "/amdcpu/0/temperature/2",
+          "IsHidden": false,
+          "Name": "Core (Tctl/Tdie)",
+          "NickName": "Core (Tctl/Tdie)"
+        }
+      },
+      {
+        "MaximumTemperature": 120,
+        "MinimumTemperature": 20,
+        "Name": "Bottom and Side",
+        "OneWayHysteresis": false,
+        "Points": [
+          "35.038759689922486,32.69511111111112",
+          "51.31782945736434,35.895111111111106",
+          "59.37984496124031,44.69511111111112",
+          "72.40310077519379,47.89511111111111",
+          "80.3,53.8"
+        ],
+        "SelectedHysteresis": 2.0,
+        "SelectedResponseTime": 1,
+        "SelectedTempSource": {
+          "Identifier": "/amdcpu/0/temperature/2",
+          "IsHidden": false,
+          "Name": "Core (Tctl/Tdie)",
+          "NickName": "Core (Tctl/Tdie)"
+        }
+      }
+    ],
+    "FanSensors": [
+      {
+        "Identifier": "/lpc/nct6797d/fan/0",
+        "IsHidden": true,
+        "Name": "Fan #1",
+        "NickName": "Fan #1"
+      },
+      {
+        "Identifier": "/lpc/nct6797d/fan/1",
+        "IsHidden": true,
+        "Name": "Fan #2",
+        "NickName": "Fan #2"
+      },
+      {
+        "Identifier": "/lpc/nct6797d/fan/2",
+        "IsHidden": true,
+        "Name": "Fan #3",
+        "NickName": "Fan #3"
+      },
+      {
+        "Identifier": "/lpc/nct6797d/fan/3",
+        "IsHidden": true,
+        "Name": "Fan #4",
+        "NickName": "Fan #4"
+      },
+      {
+        "Identifier": "/lpc/nct6797d/fan/4",
+        "IsHidden": true,
+        "Name": "Fan #5",
+        "NickName": "Fan #5"
+      },
+      {
+        "Identifier": "/lpc/nct6797d/fan/5",
+        "IsHidden": true,
+        "Name": "Fan #6",
+        "NickName": "Fan #6"
+      },
+      {
+        "Identifier": "/lpc/nct6797d/fan/6",
+        "IsHidden": true,
+        "Name": "Fan #7",
+        "NickName": "Fan #7"
+      },
+      {
+        "Identifier": "NVApiWrapper/9728/fan/0",
+        "IsHidden": true,
+        "Name": "Fan 1 - NVIDIA GeForce RTX 2070",
+        "NickName": "Fan 1 - NVIDIA GeForce RTX 2070"
+      }
+    ],
+    "HideFanSpeedCards": false,
+    "HorizontalUIOrientation": true,
+    "PrimaryColor": "#FF607D8B",
+    "SecondaryColor": "#FFAEEA00",
+    "SelectedTheme": "",
+    "SelectedTrayIconColor": "Light",
+    "SelectedTrayIconSensor": null,
+    "ShowHiddenCards": false,
+    "StartMinimized": true,
+    "SyncThemeWithWindows": false,
+    "TemperatureSensors": []
+  },
+  "Sensors": {
+    "DisabledPlugins": [],
+    "DisableStorageSensors": false,
+    "LibreHardwareMonitorSettings": {
+      "Controller": false,
+      "CPU": true,
+      "GPU": true,
+      "Memory": true,
+      "Motherboard": true,
+      "PSU": false,
+      "Storage": true,
+      "ZeroRPMOverride": false
+    },
+    "NvAPIWrapperSettings": {
+      "Enabled": true,
+      "ZeroRPMOverride": false
+    },
+    "SensorCount": 28
+  }
+}
