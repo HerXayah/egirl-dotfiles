@@ -27,5 +27,6 @@ Write-Output "User: $env:UserName" | Out-File -FilePath "C:\Logs\UpdateWindows.l
 
 # sucks that we have to do this
 Install-WindowsUpdate -MicrosoftUpdate -AcceptAll
+New-BurntToastNotification -Text "Finished Installing Updates! Gomenasai ☆*: .｡. o(≧▽≦)o .｡.:*☆" -AppLogo "C:\Windows\BurntToast\logo.png"
 
     
