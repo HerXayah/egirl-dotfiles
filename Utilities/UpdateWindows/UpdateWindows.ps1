@@ -1,5 +1,3 @@
-#Requires -RunAsAdministrator
-
 # check if log file exists
 # if it does not exist, create a new log file
 if (!(Test-Path "C:\Logs\UpdateWindows.log")) {
@@ -13,6 +11,8 @@ if (Test-Path "C:\Logs\UpdateWindows.log") {
     Write-Output "Running..." | Out-File -FilePath "C:\Logs\UpdateWindows.log" -Append
 }
 
+Add-WUServiceManager -MicrosoftUpdate -Confirm:$false
+
 # for each update in Get-WindowsUpdate create a toast notification and write output to log file
 Get-WindowsUpdate -MicrosoftUpdate | ForEach-Object {
     New-BurntToastNotification -Text "Installing Update: $($_.Title)" -AppLogo "C:\Windows\BurntToast\logo.png"
@@ -22,6 +22,9 @@ Get-WindowsUpdate -MicrosoftUpdate | ForEach-Object {
     # unfortunatly we cant do this
     # Install-WindowsUpdate -MicrosoftUpdate -AcceptAll -Update $_.Identity.UpdateID
 }
+
+Write-Output "User: $env:UserName" | Out-File -FilePath "C:\Logs\UpdateWindows.log" -Append
+
 # sucks that we have to do this
 Install-WindowsUpdate -MicrosoftUpdate -AcceptAll
 
