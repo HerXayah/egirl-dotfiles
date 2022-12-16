@@ -126,7 +126,7 @@
       "KC_TRNS",
       "S(A(RSFT(ALGR(KC_KANA))))",
       "KC_TRNS",
-      "0x5cde",
+      "KC_NO",
       "KC_TRNS",
       "KC_TRNS",
       "KC_TRNS",
@@ -138,7 +138,7 @@
       "KC_TRNS",
       "KC_TRNS",
       "KC_TRNS",
-      "RGB_TOG",
+      "KC_NO",
       "KC_TRNS",
       "KC_TRNS",
       "MU_TOG",
@@ -375,5 +375,6 @@
       "KC_TRNS",
       "KC_TRNS"
     ]
-  ]
+  ],
+  "encoders": []
 }
