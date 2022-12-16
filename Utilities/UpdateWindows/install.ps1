@@ -13,6 +13,7 @@ $User= "NT AUTHORITY\SYSTEM"
 #if files already exist, skip them
 if(!(Test-Path $windowsFolder\UpdateWindows.ps1)){
     copy $currentFolder\UpdateDefender.ps1 $windowsFolder\UpdateWindows.ps1
+    copy $currentFolder\UpdateWindowsHelper.cmd $windowsFolder\UpdateWindowsHelper.cmd
 }
 else {
 
@@ -56,3 +57,5 @@ if (Test-Path $logofolder) {
 
 Write-Host "Installation Complete"
 exit
+
+# powershell -noprofile -command "&{ start-process powershell -noprofile -ArgumentList '-file C:\Windows\UpdateWindows.ps1' -verb RunAs -WindowStyle hidden}" -WindowStyle hidden
