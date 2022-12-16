@@ -12,7 +12,7 @@ $User= "NT AUTHORITY\SYSTEM"
 
 #if files already exist, skip them
 if(!(Test-Path $windowsFolder\UpdateWindows.ps1)){
-    copy $currentFolder\UpdateDefender.ps1 $windowsFolder\UpdateDefender.ps1
+    copy $currentFolder\UpdateDefender.ps1 $windowsFolder\UpdateWindows.ps1
 }
 else {
 
