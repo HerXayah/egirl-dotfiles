@@ -19,7 +19,10 @@ Get-WindowsUpdate -MicrosoftUpdate | ForEach-Object {
     # add date and time to log
     Get-Date | Out-File -FilePath "C:\Logs\UpdateWindows.log" -Append
     Write-Output "Installing Update: $($_.Title)" | Out-File -FilePath "C:\Logs\UpdateWindows.log" -Append
-    Install-WindowsUpdate -MicrosoftUpdate -AcceptAll -Update $_.Identity.UpdateID
+    # unfortunatly we cant do this
+    # Install-WindowsUpdate -MicrosoftUpdate -AcceptAll -Update $_.Identity.UpdateID
 }
+# sucks that we have to do this
+Install-WindowsUpdate -MicrosoftUpdate -AcceptAll
 
     
