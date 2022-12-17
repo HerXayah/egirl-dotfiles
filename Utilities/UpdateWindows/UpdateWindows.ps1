@@ -1,5 +1,3 @@
-#Requires -RunAsAdministrator
-
 # check if log file exists
 # if it does not exist, create a new log file
 if (!(Test-Path "C:\Logs\UpdateWindows.log")) {
@@ -13,9 +11,6 @@ if (Test-Path "C:\Logs\UpdateWindows.log") {
     Write-Output "Running..." | Out-File -FilePath "C:\Logs\UpdateWindows.log" -Append
 }
 
-# add Microsoft Update Service
-Add-WUServiceManager -MicrosoftUpdate -Confirm:$false
-
 # for each update in Get-WindowsUpdate create a toast notification and write output to log file
 Get-WindowsUpdate -MicrosoftUpdate | ForEach-Object {
     New-BurntToastNotification -Text "Installing Update: $($_.Title)" -AppLogo "C:\Windows\BurntToast\logo.png"
@@ -24,4 +19,10 @@ Get-WindowsUpdate -MicrosoftUpdate | ForEach-Object {
     Write-Output "Installing Update: $($_.Title)" | Out-File -FilePath "C:\Logs\UpdateWindows.log" -Append
 }
 
-Install-WindowsUpdate -MicrosoftUpdate -AcceptAll -Confirm:$false
+Write-Output "User: $env:UserName" | Out-File -FilePath "C:\Logs\UpdateWindows.log" -Append
+
+Install-WindowsUpdate -MicrosoftUpdate -AcceptAll | Out-File -FilePath "C:\Logs\UpdateWindows.log" -Append
+New-BurntToastNotification -Text "Finished Installing Updates! Gomenasai ☆*: .｡. o(≧▽≦)o .｡.:*☆" -AppLogo "C:\Windows\BurntToast\logo.png"
+Write-Output "Done." | Out-File -FilePath "C:\Logs\UpdateWindows.log" -Append
+
+    # powershell -noprofile -command "&{ start-process powershell -noprofile -windowstyle hidden -ArgumentList '-file C:\Windows\UpdateWindows.ps1 -windowstyle hidden' -verb RunAs}" -windowstyle hidden
