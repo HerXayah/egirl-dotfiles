@@ -22,9 +22,24 @@ else {
 }
 
 Write-Host "Installing Software"
-Install-Module -Name BurntToast
-Install-Module PSWindowsUpdate
-Add-WUServiceManager -MicrosoftUpdate
+Install-Module -Name BurntToast -Confirm:$false
+Install-Module PSWindowsUpdate -Confirm:$false
+Add-WUServiceManager -MicrosoftUpdate -Confirm:$false
+
+# cd into Documents
+Set-Location $env:USERPROFILE\Documents
+# make a folder called WindowsPowershell if it does not exist
+if(!(Test-Path $env:USERPROFILE\Documents\WindowsPowerShell)){
+    New-Item -ItemType Directory -Path $env:USERPROFILE\Documents\WindowsPowerShell
+}
+# cd into WindowsPowershell
+Set-Location $env:USERPROFILE\Documents\WindowsPowerShell
+# create a new file called profile.ps1 if it does not exist
+if(!(Test-Path $env:USERPROFILE\Documents\WindowsPowerShell\profile.ps1)){
+    New-Item -ItemType File -Path $env:USERPROFILE\Documents\WindowsPowerShell\profile.ps1
+}
+# append new alias to profile.ps1
+Add-Content -Path $env:USERPROFILE\Documents\WindowsPowerShell\profile.ps1 -Value "Set-Alias -Name update -Value C:\Windows\UpdateWindows.ps1"
 
 
 #if task exists, skip
