@@ -1,3 +1,5 @@
+#Requires -RunAsAdministrator
+
 # check if log file exists
 # if it does not exist, create a new log file
 if (!(Test-Path "C:\Logs\UpdateWindows.log")) {
