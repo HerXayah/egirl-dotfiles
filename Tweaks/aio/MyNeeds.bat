@@ -129,7 +129,7 @@ Reg.exe add "HKLM\SYSTEM\ControlSet001\Control\FileSystem" /v "FileNameCache" /t
 Reg.exe add "HKLM\SYSTEM\ControlSet001\Control\FileSystem" /v "PathCache" /t REG_DWORD /d "128" /f
 Reg.exe add "HKLM\SYSTEM\ControlSet001\Control\FileSystem" /v "NtfsDisable8dot3NameCreation" /t REG_DWORD /d "1" /f
 Reg.exe add "HKLM\SYSTEM\ControlSet001\Control\FileSystem" /v "ContigFileAllocSize" /t REG_DWORD /d "1536" /f
-Reg.exe add "HKLM\SYSTEM\ControlSet001\Control\FileSystem" /v "DontVerifyRandomDrivers" /t REG_DWORD /d "1" /
+Reg.exe add "HKLM\SYSTEM\ControlSet001\Control\FileSystem" /v "DontVerifyRandomDrivers" /t REG_DWORD /d "1" /f
 
 cls
 echo optimizing system task parameters
