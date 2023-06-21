@@ -1,0 +1,155 @@
+{
+  "Profiles": [
+    {
+      "Tablet": "Wacom CTL-472",
+      "OutputMode": {
+        "Path": "OpenTabletDriver.Desktop.Output.AbsoluteMode",
+        "Settings": [],
+        "Enable": true
+      },
+      "Filters": [
+        {
+          "Path": "VoiDPlugins.Filter.Reconstructor",
+          "Settings": [
+            {
+              "Property": "EMAWeight",
+              "Value": 0.5
+            }
+          ],
+          "Enable": false
+        },
+        {
+          "Path": "RadialFollow.RadialFollowSmoothingTabletSpace",
+          "Settings": [
+            {
+              "Property": "SmoothingLeakCoefficient",
+              "Value": 0.0
+            },
+            {
+              "Property": "OuterRadius",
+              "Value": 0.2
+            },
+            {
+              "Property": "InnerRadius",
+              "Value": 0.07
+            },
+            {
+              "Property": "SmoothingCoefficient",
+              "Value": 0.01
+            },
+            {
+              "Property": "SoftKneeScale",
+              "Value": 3.0
+            }
+          ],
+          "Enable": true
+        },
+        {
+          "Path": "RadialFollow.RadialFollowSmoothingScreenSpace",
+          "Settings": [
+            {
+              "Property": "SmoothingLeakCoefficient",
+              "Value": 0.0
+            },
+            {
+              "Property": "InnerRadius",
+              "Value": 0.07
+            },
+            {
+              "Property": "OuterRadius",
+              "Value": 0.2
+            },
+            {
+              "Property": "SmoothingCoefficient",
+              "Value": 0.01
+            },
+            {
+              "Property": "SoftKneeScale",
+              "Value": 3.0
+            }
+          ],
+          "Enable": false
+        }
+      ],
+      "AbsoluteModeSettings": {
+        "Display": {
+          "Width": 1920.0,
+          "Height": 1080.0,
+          "X": 2880.0,
+          "Y": 540.0,
+          "Rotation": 0.0
+        },
+        "Tablet": {
+          "Width": 152.0,
+          "Height": 95.0,
+          "X": 76.0,
+          "Y": 47.5,
+          "Rotation": 0.0
+        },
+        "EnableClipping": true,
+        "EnableAreaLimiting": false,
+        "LockAspectRatio": false
+      },
+      "RelativeModeSettings": {
+        "XSensitivity": 10.0,
+        "YSensitivity": 10.0,
+        "RelativeRotation": 0.0,
+        "RelativeResetDelay": "00:00:00.1000000"
+      },
+      "Bindings": {
+        "TipActivationThreshold": 0.0,
+        "TipButton": {
+          "Path": "OpenTabletDriver.Desktop.Binding.MouseBinding",
+          "Settings": [
+            {
+              "Property": "Button",
+              "Value": "Left"
+            }
+          ],
+          "Enable": true
+        },
+        "EraserActivationThreshold": 0.0,
+        "EraserButton": null,
+        "PenButtons": [
+          null,
+          null
+        ],
+        "AuxButtons": [],
+        "MouseButtons": [],
+        "MouseScrollUp": null,
+        "MouseScrollDown": null
+      }
+    }
+  ],
+  "LockUsableAreaDisplay": false,
+  "LockUsableAreaTablet": true,
+  "Tools": [
+    {
+      "Path": "VoiDPlugins.Tool.OemKill",
+      "Settings": [],
+      "Enable": true
+    },
+    {
+      "Path": "AudioToggle.AudioToggleTool",
+      "Settings": [
+        {
+          "Property": "OutputDevice1",
+          "Value": -1
+        },
+        {
+          "Property": "InputDevice1",
+          "Value": -1
+        },
+        {
+          "Property": "OutputDevice2",
+          "Value": -1
+        },
+        {
+          "Property": "InputDevice2",
+          "Value": -1
+        }
+      ],
+      "Enable": false
+    }
+  ]
+}
