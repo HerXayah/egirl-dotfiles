@@ -4,6 +4,15 @@
     "actions": 
     [
         {
+            "command": 
+            {
+                "action": "splitPane",
+                "split": "auto",
+                "splitMode": "duplicate"
+            },
+            "keys": "alt+shift+d"
+        },
+        {
             "command": "find",
             "keys": "ctrl+shift+f"
         },
@@ -18,22 +27,19 @@
                 "singleLine": false
             },
             "keys": "ctrl+c"
-        },
-        {
-            "command": 
-            {
-                "action": "splitPane",
-                "split": "auto",
-                "splitMode": "duplicate"
-            },
-            "keys": "alt+shift+d"
         }
     ],
     "copyFormatting": "none",
     "copyOnSelect": false,
     "defaultProfile": "{574e775e-4f2a-5b96-ac1e-a2962a402336}",
     "disableAnimations": true,
-    "minimizeToNotificationArea": true,
+    "minimizeToNotificationArea": false,
+    "newTabMenu": 
+    [
+        {
+            "type": "remainingProfiles"
+        }
+    ],
     "profiles": 
     {
         "defaults": 
@@ -50,8 +56,8 @@
                 "elevate": true,
                 "font": 
                 {
-                    "face": "Monocraft",
-                    "size": 12,
+                    "face": "Agave Nerd Font Mono",
+                    "size": 12.0,
                     "weight": "black"
                 },
                 "guid": "{0caa0dad-35be-5f56-a8ff-afceeeaa6101}",
@@ -68,8 +74,8 @@
                 "cursorShape": "underscore",
                 "font": 
                 {
-                    "face": "agave Nerd Font Mono r",
-                    "size": 13,
+                    "face": "Agave Nerd Font Mono",
+                    "size": 13.0,
                     "weight": "normal"
                 },
                 "guid": "{574e775e-4f2a-5b96-ac1e-a2962a402336}",
@@ -393,6 +399,7 @@
             "yellow": "#808000"
         }
     ],
-    "useAcrylicInTabRow": false,
+    "themes": [],
+    "useAcrylicInTabRow": true,
     "windowingBehavior": "useNew"
 }

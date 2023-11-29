@@ -1,12 +1,13 @@
+$Env:KOMOREBI_CONFIG_HOME = 'C:\Users\Sarah\.config\komorebi'
+$Env:WHKD_CONFIG_HOME = 'C:\Users\Sarah\.config'
 Set-PSReadlineKeyHandler -Key Tab -Function MenuComplete
 Set-PSReadlineKeyHandler -Key UpArrow -Function HistorySearchBackward
 Set-PSReadlineKeyHandler -Key DownArrow -Function HistorySearchForward
-Import-Module "$($(Get-Item $(Get-Command scoop).Path).Directory.Parent.FullName)\modules\scoop-completion"
+Import-Module "$($(Get-Item $(Get-Command scoop.ps1).Path).Directory.Parent.FullName)\modules\scoop-completion"
+Import-Module -Name Terminal-Icons
+New-Alias open ii
+clear
 Invoke-Expression (&starship init powershell)
-$ENV:STARSHIP_CONFIG = "$HOME\example\non\default\path\starship.toml"
-
-# Chocolatey profile
-$ChocolateyProfile = "$env:ChocolateyInstall\helpers\chocolateyProfile.psm1"
-if (Test-Path($ChocolateyProfile)) {
-  Import-Module "$ChocolateyProfile"
-}
+Enable-PowerType
+Set-PSReadLineOption -PredictionSource HistoryAndPlugin -PredictionViewStyle ListView
+winfetch
