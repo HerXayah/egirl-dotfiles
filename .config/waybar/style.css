@@ -9,12 +9,12 @@
 #clock {
 	color: #4d4d4d;
     background-color: #ffb7c5;
-	margin-top: 8px;
+	margin-top: 4px;
 	margin-left: 8px;
 	margin-right: 12px;
 	padding-left: 10px;
 	padding-right: 10px;
-	margin-bottom: 8px;
+	margin-bottom: 4px;
 	border-radius: 25px;
 	transition: none;
 }
@@ -28,14 +28,14 @@
 }
 
 #window {
-	margin-top: 8px;
+	margin-top: 4px;
 	margin-left: 8px;
     padding-bottom: 0px;
     padding-top: 0px;
 	margin-right: 12px;
 	padding-left: 8px;
 	padding-right: 8px;
-	margin-bottom: 8px;
+	margin-bottom: 4px;
 	border-radius: 25px;
 	transition: none;
 	color: #4d4d4d;
@@ -63,9 +63,10 @@ window#waybar.hidden {
 #memory,
 #cpu,
 #wireplumber,
-#networking {
-    margin-left: 3px;
-	margin-right: 3px;
+#networking
+#custom-weather {
+    margin-left: 7px;
+	margin-right: 7px;
 }
 
 #wireplumber {
@@ -74,8 +75,8 @@ window#waybar.hidden {
 }
 
 #image.album {
-    margin-top: 8px;
-	margin-bottom: 8px;
+    margin-top: 4px;
+	margin-bottom: 4px;
     margin-left: 3px;
 	margin-right: 3px;
 }
@@ -85,12 +86,12 @@ window#waybar.hidden {
 }
 
 .modules-right {
-	margin-top: 8px;
+	margin-top: 4px;
 	margin-left: 8px;
 	margin-right: 12px;
 	padding-left: 10px;
 	padding-right: 10px;
-	margin-bottom: 8px;
+	margin-bottom: 4px;
 	border-radius: 25px;
 	transition: none;
 	color: #4d4d4d;
@@ -101,12 +102,12 @@ window#waybar.hidden {
 	background-color: #ffb7c5;
 	border: none;
 	color: #e5e5e2;
-	margin-top: 15px;
+	margin-top: 4px;
 	margin-left: 6px;
 	margin-right: 6px;
 	padding-left: 10px;
 	padding-right: 10px;
-	margin-bottom: 15px;
+	margin-bottom: 4px;
 	border-radius: 7px;
 	transition: all ease-in-out 0.5s;
 }

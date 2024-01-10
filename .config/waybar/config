@@ -60,6 +60,18 @@
             "mpris"
         ]
     },
+    "group/media-alt": {
+        "orientation": "inherit",
+        "drawer": {
+            "transition-duration": 500,
+            "children-class": "group-st",
+            "transition-left-to-right": true
+        },
+        "modules" : [
+            "custom/music-alt",
+            "mpris"
+        ]
+    },
     "mpris": {
         "format": "{player_icon} {dynamic}",
         "format-paused": "{status_icon} <i>{dynamic}</i>",
@@ -81,6 +93,7 @@
         },
         "modules": [
             "cpu",
+            "custom/weather",
             "wireplumber",
             "network",
             "memory"
@@ -120,6 +133,13 @@
     "custom/spacer3": {
         "format": "|"
     },
+    "custom/weather": {
+        "exec": "~/.config/waybar/scripts/get_weather.sh Mannheim+Germany",
+        "return-type": "json",
+        "format": "{}",
+        "tooltip": true,
+        "interval": 3600
+    },
     "wlr/taskbar": {
         "icon-size": 26,
         "format": "{icon}",  
@@ -146,7 +166,7 @@
         "tooltip": false,
     },
     "image#menu": {
-        "size": 24,
+        "size": 18,
         "interval": 1,
         "on-click": "rofi -show run",
         "exec": "~/.config/waybar/scripts/icon.sh",
