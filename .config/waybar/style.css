@@ -1,0 +1,101 @@
+* {
+	border: none;
+	border-radius: 0;
+    font-family: FontAwesome, Roboto ,Montserrrat, Helvetica,Arial, sans-serif;
+    font-size: 12px;
+    min-height: 24px;
+}
+
+#clock {
+	color: #4d4d4d;
+    background-color: #ffb7c5;
+	margin-top: 8px;
+	margin-left: 8px;
+	margin-right: 12px;
+	padding-left: 10px;
+	padding-right: 10px;
+	margin-bottom: 8px;
+	border-radius: 25px;
+	transition: none;
+}
+
+#window {
+	margin-top: 8px;
+	margin-left: 8px;
+    padding-bottom: 0px;
+    padding-top: 0px;
+	margin-right: 12px;
+	padding-left: 8px;
+	padding-right: 8px;
+	margin-bottom: 8px;
+	border-radius: 25px;
+	transition: none;
+	color: #4d4d4d;
+    background-color: #ffb7c5;
+    font-size: 12px;
+}
+
+window#waybar {
+    background-color: rgba(20, 21, 22, 0.671);
+    padding: 0;
+    margin: 0;
+}
+
+window#waybar.hidden {
+    opacity: 0.2;
+}
+
+#workspaces button {
+	transition: none;
+	color: #e5e5e2;
+	background: transparent;
+	font-size: 16px;
+}
+
+#workspaces button.focused {
+	color: #f8b1d8;
+}
+
+#workspaces button:hover {
+	transition: none;
+	box-shadow: inherit;
+	text-shadow: inherit;
+	color: #ff79c6;
+}
+
+#memory,
+#cpu,
+#wireplumber,
+#networking {
+    margin-left: 3px;
+	margin-right: 3px;
+}
+
+#wireplumber {
+    margin-right: 8px;
+    margin-left: 0;
+}
+
+#image.album {
+    margin-top: 8px;
+	margin-bottom: 8px;
+    margin-left: 3px;
+	margin-right: 3px;
+}
+
+#mpris {
+    padding-left: 10px;
+}
+
+.modules-right {
+	margin-top: 8px;
+	margin-left: 8px;
+	margin-right: 12px;
+	padding-left: 10px;
+	padding-right: 10px;
+	margin-bottom: 8px;
+	border-radius: 25px;
+	transition: none;
+	color: #4d4d4d;
+    background-color: #ffb7c5;
+}
