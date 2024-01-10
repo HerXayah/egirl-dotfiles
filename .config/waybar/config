@@ -2,39 +2,28 @@
     "layer": "top",
     "output": ["DP-2"],
     "height": 38,
-    "modules-left": ["group/menu","hyprland/workspaces","wlr/taskbar","hyprland/window"],
-    "modules-center": ["clock"],
+    "modules-left": ["group/menu","group/timestuff","custom/spacer2","hyprland/workspaces","custom/spacer3","wlr/taskbar"],
+    "modules-center": ["hyprland/window"],
     "modules-right": ["group/media","group/stats","gamemode","custom/spacer"],
-    "clock": {
-        "format-alt": "{:%H:%M}",
-        "format": "{:%A, %B %d, %Y (%R)}",
-        "tooltip-format": "\n<span size='9pt' font='WenQuanYi Zen Hei Mono'>{calendar}</span>",
-        "calendar": {
-                    "mode"          : "year",
-                    "mode-mon-col"  : 3,
-                    "weeks-pos"     : "right",
-                    "on-scroll"     : 1,
-                    "on-click-right": "mode",
-                    "format": {
-                              "months":     "<span color='#ffead3'><b>{}</b></span>",
-                              "days":       "<span color='#ecc6d9'><b>{}</b></span>",
-                              "weeks":      "<span color='#99ffdd'><b>W{}</b></span>",
-                              "weekdays":   "<span color='#ffcc66'><b>{}</b></span>",
-                              "today":      "<span color='#ff6699'><b><u>{}</u></b></span>"
-                              }
-                    },
-        "actions":  {
-                    "on-click-right": "mode",
-                    "on-click-forward": "tz_up",
-                    "on-click-backward": "tz_down",
-                    "on-scroll-up": "shift_up",
-                    "on-scroll-down": "shift_down"
-                }
+    "clock#day": {
+        "format": "🕑 {:%H:%M}",
+        "timezone": "Europe/Berlin"
+},
+"clock#time": {
+    "format": "📓 {:%D:%Y}",
+    "timezone": "Europe/Berlin"
 },
 "hyprland/workspaces": {
     "disable-scroll": true,
     "on-click": "activate"
   },
+"group/timestuff": {
+    "orientation": "inherit",
+    "modules": [
+        "clock#day",
+        "clock#time"
+    ]
+},
 "keyboard-state": {
     "capslock": true,
     "format": "{name} {icon}",
@@ -121,10 +110,15 @@
     "cpu" : {
         "format": "💻 {usage}%",
         "interval": 30,
-
     },
     "custom/spacer": {
         "format": "⠀"
+    },
+    "custom/spacer2": {
+        "format": "|"
+    },
+    "custom/spacer3": {
+        "format": "|"
     },
     "wlr/taskbar": {
         "icon-size": 26,
@@ -144,7 +138,7 @@
         "interface": "enp16s0",
         "max-length": 50,
         "format-ethernet": "⏭  {ipaddr}",
-        "format-disconnected": "", //An empty format will hide the module.
+        "format-disconnected": "", 
         "tooltip-format": "{ifname} via {gwaddr}",
         "tooltip-format-ethernet": "{ifname}",
         "tooltip-format-disconnected": "Disconnected",

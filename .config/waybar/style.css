@@ -19,6 +19,14 @@
 	transition: none;
 }
 
+#clock.time {
+	margin-left: 8px ;
+}
+
+#clock.day {
+	margin-right: 0px;
+}
+
 #window {
 	margin-top: 8px;
 	margin-left: 8px;
@@ -43,17 +51,6 @@ window#waybar {
 
 window#waybar.hidden {
     opacity: 0.2;
-}
-
-#workspaces button {
-	transition: none;
-	color: #e5e5e2;
-	background: transparent;
-	font-size: 16px;
-}
-
-#workspaces button.focused {
-	color: #f8b1d8;
 }
 
 #workspaces button:hover {
@@ -98,4 +95,45 @@ window#waybar.hidden {
 	transition: none;
 	color: #4d4d4d;
     background-color: #ffb7c5;
+}
+
+#workspaces button {
+	background-color: #ffb7c5;
+	border: none;
+	color: #e5e5e2;
+	margin-top: 15px;
+	margin-left: 6px;
+	margin-right: 6px;
+	padding-left: 10px;
+	padding-right: 10px;
+	margin-bottom: 15px;
+	border-radius: 7px;
+	transition: all ease-in-out 0.5s;
+}
+
+#workspaces button.active {
+	background-color: #FF9DB0;
+	color: #e5e5e2;
+	font-weight: bold;
+}
+
+#workspaces button:hover {
+	transition: none;
+	box-shadow: inherit;
+	text-shadow: inherit;
+	color: #e5e5e2;
+	font-style: italic;
+}
+
+#custom-spacer2 {
+	margin-right: 10px;
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+#custom-spacer3 {
+	margin-left: 10px;
+	margin-right: 7px;
+	margin-top: 0;
+	margin-bottom: 0;
 }
