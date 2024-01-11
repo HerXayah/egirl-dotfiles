@@ -114,7 +114,7 @@ window#waybar.hidden {
 
 #workspaces button.active {
 	background-color: #FF9DB0;
-	color: #e5e5e2;
+	color: #4d4d4d;
 	font-weight: bold;
 }
 

@@ -11,6 +11,8 @@
     - cava/cavasik
     - rofi **WIP**
     - dunst
+    - waybar
+    - swaync
     - hyprland
     - neofetch
     - starship

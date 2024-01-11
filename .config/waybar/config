@@ -4,13 +4,14 @@
     "height": 38,
     "modules-left": ["group/menu","group/timestuff","custom/spacer2","hyprland/workspaces","custom/spacer3","wlr/taskbar"],
     "modules-center": ["hyprland/window"],
-    "modules-right": ["group/media","group/stats","gamemode","custom/spacer"],
-    "clock#day": {
-        "format": "🕑 {:%H:%M}",
-        "timezone": "Europe/Berlin"
+    "modules-right": ["group/media","group/stats","custom/swaync","custom/spacer"],
+ 
+"clock#day": {
+    "format": "🕑 {:%H:%M}",
+    "timezone": "Europe/Berlin"
 },
 "clock#time": {
-    "format": "📓 {:%D:%Y}",
+    "format": "📓 {:%D}",
     "timezone": "Europe/Berlin"
 },
 "hyprland/workspaces": {
@@ -133,6 +134,10 @@
     "custom/spacer3": {
         "format": "|"
     },
+    "custom/swaync": {
+        "on-click": "swaync-client -t -sw",
+	"format": "🔔",
+    },
     "custom/weather": {
         "exec": "~/.config/waybar/scripts/get_weather.sh Mannheim+Germany",
         "return-type": "json",
@@ -178,7 +183,8 @@
     "output": ["HDMI-A-2"],
     "height": 38,
     "spacing": 5,
-    "modules-left": ["hyprland/workspaces","wlr/taskbar","hyprland/window"],
+    "modules-left": ["hyprland/workspaces","custom/spacer2","wlr/taskbar"],
+    "modules-center": ["hyprland/window"],
     "modules-right": [],
     "tooltip": false,
 "hyprland/window": {
