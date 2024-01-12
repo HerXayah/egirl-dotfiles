@@ -135,8 +135,12 @@
         "format": "|"
     },
     "custom/swaync": {
-        "on-click": "swaync-client -t -sw",
-	"format": "🔔",
+        "exec-if": "which swaync-client",
+        "exec": "swaync-client -swb",
+        "on-click": "sleep 0.1 && swaync-client -t -sw",
+        "on-click-right": "sleep 0.1 && swaync-client -d -sw",
+        "escape": true,
+	    "format": "🔔",
     },
     "custom/weather": {
         "exec": "~/.config/waybar/scripts/get_weather.sh Mannheim+Germany",
