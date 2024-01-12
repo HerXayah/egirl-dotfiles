@@ -4,7 +4,7 @@
     "height": 38,
     "modules-left": ["group/menu","group/timestuff","custom/spacer2","hyprland/workspaces","custom/spacer3","wlr/taskbar"],
     "modules-center": ["hyprland/window"],
-    "modules-right": ["group/media","group/stats","custom/swaync","custom/spacer"],
+    "modules-right": ["tray","custom/spacer3","group/media","group/stats","custom/swaync","custom/spacer"],
  
 "clock#day": {
     "format": "🕑 {:%H:%M}",
@@ -32,6 +32,10 @@
         "locked": "",
         "unlocked": ""
     }
+},
+"tray": {
+    "icon-size": 18,
+    "spacing": 10
 },
 "hyprland/window": {
     "format": "> {title}",
