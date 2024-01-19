@@ -2,7 +2,7 @@
 
 ## These are my dotfiles for my Arch and Windows Boxes.
 
-![image](https://github.com/PrincessAkira/egirl-dotfiles/assets/45071533/ceee8a01-f97d-4410-8ea9-9a147dea59ac)
+![image](https://www.youtube.com/watch?v=8lFptKK0W7Q)
 
 ### What software do you need?
 
