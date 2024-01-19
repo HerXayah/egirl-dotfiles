@@ -2,7 +2,7 @@
 
 ## These are my dotfiles for my Arch and Windows Boxes.
 
-![image](https://www.youtube.com/watch?v=8lFptKK0W7Q)
+[Showcase](https://www.youtube.com/watch?v=8lFptKK0W7Q)
 
 ### What software do you need?
 
