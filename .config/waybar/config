@@ -1,0 +1,211 @@
+[{
+    "layer": "top",
+    "output": ["DP-2"],
+    "height": 38,
+    "modules-left": ["group/menu","group/timestuff","custom/spacer2","hyprland/workspaces","custom/spacer3","wlr/taskbar"],
+    "modules-center": ["hyprland/window"],
+    "modules-right": ["tray","custom/spacer3","group/media","group/stats","custom/swaync","custom/spacer"],
+ 
+"clock#day": {
+    "format": "🕑 {:%H:%M}",
+    "timezone": "Europe/Berlin"
+},
+"clock#time": {
+    "format": "📓 {:%D}",
+    "timezone": "Europe/Berlin"
+},
+"hyprland/workspaces": {
+    "disable-scroll": true,
+    "on-click": "activate"
+  },
+"group/timestuff": {
+    "orientation": "inherit",
+    "modules": [
+        "clock#day",
+        "clock#time"
+    ]
+},
+"keyboard-state": {
+    "capslock": true,
+    "format": "{name} {icon}",
+    "format-icons": {
+        "locked": "",
+        "unlocked": ""
+    }
+},
+"tray": {
+    "icon-size": 18,
+    "spacing": 10
+},
+"hyprland/window": {
+    "format": "> {title}",
+    "rewrite":  {
+    "(.*) - Brave": "Brave $1",
+    "(.*) kitty": "Sakura: $1",
+    },
+    "separate-outputs": true
+},
+"group/menu": {
+    "orientation": "inherit",
+    "modules": [
+        "custom/spacer",
+        "image#menu",
+        "custom/spacer",
+    ]
+},
+    "group/media": {
+        "orientation": "inherit",
+        "drawer": {
+            "transition-duration": 500,
+            "children-class": "group-st",
+            "transition-left-to-right": true
+        },
+        "modules" : [
+            "image#album",
+            "mpris"
+        ]
+    },
+    "group/media-alt": {
+        "orientation": "inherit",
+        "drawer": {
+            "transition-duration": 500,
+            "children-class": "group-st",
+            "transition-left-to-right": true
+        },
+        "modules" : [
+            "custom/music-alt",
+            "mpris"
+        ]
+    },
+    "mpris": {
+        "format": "{player_icon} {dynamic}",
+        "format-paused": "{status_icon} <i>{dynamic}</i>",
+        "[format]-len": 25,
+        "player-icons": {
+            "default": "▶",
+        },
+        "status-icons": {
+            "paused": "⏸"
+        },
+    "ignored-players": ["brave","firefox"]
+    },
+    "group/stats": {
+        "orientation": "inherit",
+        "drawer": {
+            "transition-duration": 500,
+            "children-class": "group-music",
+            "transition-left-to-right": false
+        },
+        "modules": [
+            "cpu",
+            "custom/weather",
+            "wireplumber",
+            "network",
+            "memory"
+        ]
+    },
+    "memory" : {
+        "interval": 30,
+        "format": "🧠 {percentage}%"
+    },
+    "image#album": {
+        "exec":"~/.config/waybar/scripts/album_art.sh",
+        "size": 24,
+        "interval": 30,  
+   },
+    "gamemode": {
+        "format": "{glyph}",
+        "format-alt": "{glyph} {count}",
+        "glyph": "",
+        "hide-not-running": true,
+        "use-icon": true,
+        "icon-name": "input-gaming-symbolic",
+        "icon-spacing": 4,
+        "icon-size": 14,
+		"tooltip": false,
+        "tooltip-format": "Games running: {count}"
+    },
+    "cpu" : {
+        "format": "💻 {usage}%",
+        "interval": 30,
+    },
+    "custom/spacer": {
+        "format": "⠀"
+    },
+    "custom/spacer2": {
+        "format": "|"
+    },
+    "custom/spacer3": {
+        "format": "|"
+    },
+    "custom/swaync": {
+        "exec-if": "which swaync-client",
+        "exec": "swaync-client -swb",
+        "on-click": "sleep 0.1 && swaync-client -t -sw",
+        "on-click-right": "sleep 0.1 && swaync-client -d -sw",
+        "escape": true,
+	    "format": "🔔",
+    },
+    "custom/weather": {
+        "exec": "~/.config/waybar/scripts/get_weather.sh Mannheim+Germany",
+        "return-type": "json",
+        "format": "{}",
+        "tooltip": true,
+        "interval": 3600
+    },
+    "wlr/taskbar": {
+        "icon-size": 26,
+        "format": "{icon}",  
+		"tooltip": false,
+        "on-click": "activate",
+        "on-click-middle": "close",
+    },
+    "wireplumber": {
+        "format": "♬ {volume}%",
+        "scroll-step": 1,
+        "format-muted": "",
+        "max-volume": 100,
+        "on-click": "pauvcontrol"
+    },
+    "network": {
+        "interface": "enp16s0",
+        "max-length": 50,
+        "format-ethernet": "⏭  {ipaddr}",
+        "format-disconnected": "", 
+        "tooltip-format": "{ifname} via {gwaddr}",
+        "tooltip-format-ethernet": "{ifname}",
+        "tooltip-format-disconnected": "Disconnected",
+        "format": "{ifname}",
+        "tooltip": false,
+    },
+    "image#menu": {
+        "size": 18,
+        "interval": 1,
+        "on-click": "rofi -show run",
+        "exec": "~/.config/waybar/scripts/icon.sh",
+		"tooltip": false,
+    }
+},
+{
+    "layer": "top",
+    "output": ["HDMI-A-2"],
+    "height": 38,
+    "spacing": 5,
+    "modules-left": ["hyprland/workspaces","custom/spacer2","wlr/taskbar"],
+    "modules-center": ["hyprland/window"],
+    "modules-right": [],
+    "tooltip": false,
+"hyprland/window": {
+    "format": "> {title}",
+    "rewrite":  {
+    "(.*) - Brave": "Brave $1",
+    "(.*) kitty": "Sakura: $1",
+    },
+    "separate-outputs": true
+},
+"wlr/taskbar": {
+    "icon-size": 26,
+    "format": "{icon}"   
+}
+}]
+

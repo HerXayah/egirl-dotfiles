@@ -2,6 +2,8 @@
 
 ## These are my dotfiles for my Arch and Windows Boxes.
 
+[Showcase](https://www.youtube.com/watch?v=8lFptKK0W7Q)
+
 ### What software do you need?
 
     - btop
@@ -9,6 +11,8 @@
     - cava/cavasik
     - rofi **WIP**
     - dunst
+    - waybar
+    - swaync
     - hyprland
     - neofetch
     - starship
