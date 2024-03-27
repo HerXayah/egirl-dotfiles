@@ -63,8 +63,8 @@ user_pref("browser.urlbar.trimURLs", false);                                    
 user_pref("browser.urlbar.update2.engineAliasRefresh", true);                              // x Enable Add button in Search engines options
 user_pref("browser.xul.error_pages.expert_bad_cert", true);                                // x Display advanced info on Insecure Connection
 user_pref("image.animation_mode", "once");                                                 // / GIF loop once - improves perf a lot
-user_pref("media.autoplay.blocking_policy", 1);                                            // x Autoplay of HTML5 media policy 1 = new 2 = old [0]
-user_pref("media.autoplay.default", 5);                                                    // x Autoplay block all by default [1]
+user_pref("media.autoplay.blocking_policy", 0);                                            // x Autoplay of HTML5 media policy 1 = new 2 = old [0]
+user_pref("media.autoplay.default", 1);                                                    // x Autoplay block all by default [1]
 user_pref("mousewheel.with_shift.action", 4);                                              // x Scroll horizontally on Shift+Mousewheel [4]
 user_pref("media.memory_cache_max_size", 65536);                                           // x Increase media memory cache [8192]
 
